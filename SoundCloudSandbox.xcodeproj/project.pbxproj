@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		341FFFC11E6B6A5E004D13C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFC01E6B6A5E004D13C2 /* main.m */; };
+		341FFFC41E6B6A5E004D13C2 /* DPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFC31E6B6A5E004D13C2 /* DPAppDelegate.m */; };
+		341FFFC71E6B6A5E004D13C2 /* DPRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFC61E6B6A5E004D13C2 /* DPRootViewController.m */; };
+		341FFFCA1E6B6A5E004D13C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 341FFFC81E6B6A5E004D13C2 /* Main.storyboard */; };
+		341FFFCC1E6B6A5E004D13C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 341FFFCB1E6B6A5E004D13C2 /* Assets.xcassets */; };
+		341FFFCF1E6B6A5E004D13C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 341FFFCD1E6B6A5E004D13C2 /* LaunchScreen.storyboard */; };
+		341FFFD81E6B6C96004D13C2 /* DPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFD71E6B6C96004D13C2 /* DPViewController.m */; };
+		341FFFDB1E6B6CD3004D13C2 /* DPUserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFDA1E6B6CD3004D13C2 /* DPUserProfileViewController.m */; };
+		341FFFDD1E6B6D22004D13C2 /* DPUserProfileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 341FFFDC1E6B6D22004D13C2 /* DPUserProfileStoryboard.storyboard */; };
+		341FFFE81E6B71DA004D13C2 /* DPUserProfileViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFE71E6B71DA004D13C2 /* DPUserProfileViewModel.m */; };
+		341FFFEB1E6B721B004D13C2 /* DPViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFEA1E6B721B004D13C2 /* DPViewModel.m */; };
+		341FFFEE1E6B73CD004D13C2 /* DPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFED1E6B73CD004D13C2 /* DPView.m */; };
+		E838B4A869F19C2624241C4E /* Pods_SoundCloudSandbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94935BDC29DD33536910C4F4 /* Pods_SoundCloudSandbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		341FFFBC1E6B6A5E004D13C2 /* SoundCloudSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundCloudSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		341FFFC01E6B6A5E004D13C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		341FFFC21E6B6A5E004D13C2 /* DPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPAppDelegate.h; sourceTree = "<group>"; };
+		341FFFC31E6B6A5E004D13C2 /* DPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPAppDelegate.m; sourceTree = "<group>"; };
+		341FFFC51E6B6A5E004D13C2 /* DPRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPRootViewController.h; sourceTree = "<group>"; };
+		341FFFC61E6B6A5E004D13C2 /* DPRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPRootViewController.m; sourceTree = "<group>"; };
+		341FFFC91E6B6A5E004D13C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		341FFFCB1E6B6A5E004D13C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		341FFFCE1E6B6A5E004D13C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		341FFFD01E6B6A5E004D13C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		341FFFD61E6B6C96004D13C2 /* DPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPViewController.h; sourceTree = "<group>"; };
+		341FFFD71E6B6C96004D13C2 /* DPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPViewController.m; sourceTree = "<group>"; };
+		341FFFD91E6B6CD3004D13C2 /* DPUserProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUserProfileViewController.h; sourceTree = "<group>"; };
+		341FFFDA1E6B6CD3004D13C2 /* DPUserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPUserProfileViewController.m; sourceTree = "<group>"; };
+		341FFFDC1E6B6D22004D13C2 /* DPUserProfileStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DPUserProfileStoryboard.storyboard; sourceTree = "<group>"; };
+		341FFFDF1E6B6FAC004D13C2 /* DPViewType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPViewType.h; sourceTree = "<group>"; };
+		341FFFE21E6B6FFC004D13C2 /* DPViewModelType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPViewModelType.h; sourceTree = "<group>"; };
+		341FFFE61E6B71DA004D13C2 /* DPUserProfileViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUserProfileViewModel.h; sourceTree = "<group>"; };
+		341FFFE71E6B71DA004D13C2 /* DPUserProfileViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPUserProfileViewModel.m; sourceTree = "<group>"; };
+		341FFFE91E6B721B004D13C2 /* DPViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPViewModel.h; sourceTree = "<group>"; };
+		341FFFEA1E6B721B004D13C2 /* DPViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPViewModel.m; sourceTree = "<group>"; };
+		341FFFEC1E6B73CD004D13C2 /* DPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPView.h; sourceTree = "<group>"; };
+		341FFFED1E6B73CD004D13C2 /* DPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPView.m; sourceTree = "<group>"; };
+		341FFFF01E6C553F004D13C2 /* DPPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPPrefixHeader.pch; sourceTree = "<group>"; };
+		638EDC92D95596ECF77552C8 /* Pods-SoundCloudSandbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloudSandbox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloudSandbox/Pods-SoundCloudSandbox.debug.xcconfig"; sourceTree = "<group>"; };
+		94935BDC29DD33536910C4F4 /* Pods_SoundCloudSandbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoundCloudSandbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E728664F99199056F5E79186 /* Pods-SoundCloudSandbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloudSandbox.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloudSandbox/Pods-SoundCloudSandbox.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		341FFFB91E6B6A5E004D13C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E838B4A869F19C2624241C4E /* Pods_SoundCloudSandbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		341FFFB31E6B6A5E004D13C2 = {
+			isa = PBXGroup;
+			children = (
+				341FFFBE1E6B6A5E004D13C2 /* SoundCloudSandbox */,
+				341FFFBD1E6B6A5E004D13C2 /* Products */,
+				83A9248C0F43D3B2A87E19A1 /* Pods */,
+				832C3D3B83889CDF7F3E994D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		341FFFBD1E6B6A5E004D13C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				341FFFBC1E6B6A5E004D13C2 /* SoundCloudSandbox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		341FFFBE1E6B6A5E004D13C2 /* SoundCloudSandbox */ = {
+			isa = PBXGroup;
+			children = (
+				341FFFC21E6B6A5E004D13C2 /* DPAppDelegate.h */,
+				341FFFC31E6B6A5E004D13C2 /* DPAppDelegate.m */,
+				341FFFEF1E6B8C82004D13C2 /* Common */,
+				341FFFE51E6B70B5004D13C2 /* Modules */,
+				341FFFBF1E6B6A5E004D13C2 /* Supporting Files */,
+			);
+			path = SoundCloudSandbox;
+			sourceTree = "<group>";
+		};
+		341FFFBF1E6B6A5E004D13C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				341FFFC81E6B6A5E004D13C2 /* Main.storyboard */,
+				341FFFCD1E6B6A5E004D13C2 /* LaunchScreen.storyboard */,
+				341FFFCB1E6B6A5E004D13C2 /* Assets.xcassets */,
+				341FFFD01E6B6A5E004D13C2 /* Info.plist */,
+				341FFFC01E6B6A5E004D13C2 /* main.m */,
+				341FFFF01E6C553F004D13C2 /* DPPrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		341FFFDE1E6B6D27004D13C2 /* UserProfileModule */ = {
+			isa = PBXGroup;
+			children = (
+				341FFFE61E6B71DA004D13C2 /* DPUserProfileViewModel.h */,
+				341FFFE71E6B71DA004D13C2 /* DPUserProfileViewModel.m */,
+				341FFFD91E6B6CD3004D13C2 /* DPUserProfileViewController.h */,
+				341FFFDA1E6B6CD3004D13C2 /* DPUserProfileViewController.m */,
+				341FFFDC1E6B6D22004D13C2 /* DPUserProfileStoryboard.storyboard */,
+			);
+			name = UserProfileModule;
+			sourceTree = "<group>";
+		};
+		341FFFE51E6B70B5004D13C2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				341FFFDE1E6B6D27004D13C2 /* UserProfileModule */,
+			);
+			name = Modules;
+			sourceTree = "<group>";
+		};
+		341FFFEF1E6B8C82004D13C2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				341FFFC51E6B6A5E004D13C2 /* DPRootViewController.h */,
+				341FFFC61E6B6A5E004D13C2 /* DPRootViewController.m */,
+				341FFFDF1E6B6FAC004D13C2 /* DPViewType.h */,
+				341FFFE21E6B6FFC004D13C2 /* DPViewModelType.h */,
+				341FFFD61E6B6C96004D13C2 /* DPViewController.h */,
+				341FFFD71E6B6C96004D13C2 /* DPViewController.m */,
+				341FFFE91E6B721B004D13C2 /* DPViewModel.h */,
+				341FFFEA1E6B721B004D13C2 /* DPViewModel.m */,
+				341FFFEC1E6B73CD004D13C2 /* DPView.h */,
+				341FFFED1E6B73CD004D13C2 /* DPView.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		832C3D3B83889CDF7F3E994D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94935BDC29DD33536910C4F4 /* Pods_SoundCloudSandbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83A9248C0F43D3B2A87E19A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				638EDC92D95596ECF77552C8 /* Pods-SoundCloudSandbox.debug.xcconfig */,
+				E728664F99199056F5E79186 /* Pods-SoundCloudSandbox.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		341FFFBB1E6B6A5E004D13C2 /* SoundCloudSandbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 341FFFD31E6B6A5E004D13C2 /* Build configuration list for PBXNativeTarget "SoundCloudSandbox" */;
+			buildPhases = (
+				CBBE2C34E49D218CF24B87F6 /* [CP] Check Pods Manifest.lock */,
+				341FFFB81E6B6A5E004D13C2 /* Sources */,
+				341FFFB91E6B6A5E004D13C2 /* Frameworks */,
+				341FFFBA1E6B6A5E004D13C2 /* Resources */,
+				3F22AFDA2B245FA82CE061BB /* [CP] Embed Pods Frameworks */,
+				FFDA04D2672FFEC4966B86C8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SoundCloudSandbox;
+			productName = SoundCloudSandbox;
+			productReference = 341FFFBC1E6B6A5E004D13C2 /* SoundCloudSandbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		341FFFB41E6B6A5E004D13C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = dmpv;
+				TargetAttributes = {
+					341FFFBB1E6B6A5E004D13C2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 96XFGSE75Y;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 341FFFB71E6B6A5E004D13C2 /* Build configuration list for PBXProject "SoundCloudSandbox" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 341FFFB31E6B6A5E004D13C2;
+			productRefGroup = 341FFFBD1E6B6A5E004D13C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				341FFFBB1E6B6A5E004D13C2 /* SoundCloudSandbox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		341FFFBA1E6B6A5E004D13C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				341FFFCF1E6B6A5E004D13C2 /* LaunchScreen.storyboard in Resources */,
+				341FFFCC1E6B6A5E004D13C2 /* Assets.xcassets in Resources */,
+				341FFFDD1E6B6D22004D13C2 /* DPUserProfileStoryboard.storyboard in Resources */,
+				341FFFCA1E6B6A5E004D13C2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F22AFDA2B245FA82CE061BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoundCloudSandbox/Pods-SoundCloudSandbox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBBE2C34E49D218CF24B87F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FFDA04D2672FFEC4966B86C8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SoundCloudSandbox/Pods-SoundCloudSandbox-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		341FFFB81E6B6A5E004D13C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				341FFFDB1E6B6CD3004D13C2 /* DPUserProfileViewController.m in Sources */,
+				341FFFD81E6B6C96004D13C2 /* DPViewController.m in Sources */,
+				341FFFEE1E6B73CD004D13C2 /* DPView.m in Sources */,
+				341FFFEB1E6B721B004D13C2 /* DPViewModel.m in Sources */,
+				341FFFC71E6B6A5E004D13C2 /* DPRootViewController.m in Sources */,
+				341FFFC41E6B6A5E004D13C2 /* DPAppDelegate.m in Sources */,
+				341FFFC11E6B6A5E004D13C2 /* main.m in Sources */,
+				341FFFE81E6B71DA004D13C2 /* DPUserProfileViewModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		341FFFC81E6B6A5E004D13C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				341FFFC91E6B6A5E004D13C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		341FFFCD1E6B6A5E004D13C2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				341FFFCE1E6B6A5E004D13C2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		341FFFD11E6B6A5E004D13C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		341FFFD21E6B6A5E004D13C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		341FFFD41E6B6A5E004D13C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 638EDC92D95596ECF77552C8 /* Pods-SoundCloudSandbox.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				DEVELOPMENT_TEAM = 96XFGSE75Y;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DPPrefixHeader.pch;
+				INFOPLIST_FILE = SoundCloudSandbox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmpv.SoundCloudSandbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		341FFFD51E6B6A5E004D13C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E728664F99199056F5E79186 /* Pods-SoundCloudSandbox.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				DEVELOPMENT_TEAM = 96XFGSE75Y;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = DPPrefixHeader.pch;
+				INFOPLIST_FILE = SoundCloudSandbox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dmpv.SoundCloudSandbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		341FFFB71E6B6A5E004D13C2 /* Build configuration list for PBXProject "SoundCloudSandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				341FFFD11E6B6A5E004D13C2 /* Debug */,
+				341FFFD21E6B6A5E004D13C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		341FFFD31E6B6A5E004D13C2 /* Build configuration list for PBXNativeTarget "SoundCloudSandbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				341FFFD41E6B6A5E004D13C2 /* Debug */,
+				341FFFD51E6B6A5E004D13C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 341FFFB41E6B6A5E004D13C2 /* Project object */;
+}

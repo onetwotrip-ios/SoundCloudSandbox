@@ -1,0 +1,6 @@
+framework module Pods_SoundCloudSandbox {
+  umbrella header "Pods-SoundCloudSandbox-umbrella.h"
+
+  export *
+  module * { export * }
+}
