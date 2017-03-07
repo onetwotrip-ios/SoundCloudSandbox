@@ -1,5 +1,5 @@
 //
-//  DPViewModel.h
+//  DPTrackService.h
 //  SoundCloudSandbox
 //
 //  Created by Dmitry Purtov on 05/03/2017.
@@ -8,12 +8,6 @@
 
 @import Foundation;
 
-#import "DPViewModelType.h"
-
-NS_ASSUME_NONNULL_BEGIN
-
-@interface DPViewModel : NSObject <DPViewModelType>
+@interface DPTrackService : NSObject
 
 @end
-
-NS_ASSUME_NONNULL_END

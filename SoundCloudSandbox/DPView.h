@@ -6,7 +6,7 @@
 //  Copyright © 2017 dmpv. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+@import UIKit;
 
 #import "DPViewType.h"
 

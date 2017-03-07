@@ -19,10 +19,13 @@
 		341FFFE81E6B71DA004D13C2 /* DPUserProfileViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFE71E6B71DA004D13C2 /* DPUserProfileViewModel.m */; };
 		341FFFEB1E6B721B004D13C2 /* DPViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFEA1E6B721B004D13C2 /* DPViewModel.m */; };
 		341FFFEE1E6B73CD004D13C2 /* DPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFED1E6B73CD004D13C2 /* DPView.m */; };
-		E838B4A869F19C2624241C4E /* Pods_SoundCloudSandbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94935BDC29DD33536910C4F4 /* Pods_SoundCloudSandbox.framework */; };
+		341FFFF71E6C5ADB004D13C2 /* DPProfileService.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFF61E6C5ADB004D13C2 /* DPProfileService.m */; };
+		341FFFFB1E6C5B08004D13C2 /* DPTrackService.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFFA1E6C5B08004D13C2 /* DPTrackService.m */; };
+		74288C6010FD5F7DB5044A87 /* Pods_SoundCloudSandbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D53BD4FE2E217BE62A7EFD9 /* Pods_SoundCloudSandbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		341F002F1E6E0630004D13C2 /* APIPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = APIPlayground.playground; sourceTree = "<group>"; };
 		341FFFBC1E6B6A5E004D13C2 /* SoundCloudSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundCloudSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		341FFFC01E6B6A5E004D13C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		341FFFC21E6B6A5E004D13C2 /* DPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPAppDelegate.h; sourceTree = "<group>"; };
@@ -47,8 +50,12 @@
 		341FFFEC1E6B73CD004D13C2 /* DPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPView.h; sourceTree = "<group>"; };
 		341FFFED1E6B73CD004D13C2 /* DPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPView.m; sourceTree = "<group>"; };
 		341FFFF01E6C553F004D13C2 /* DPPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPPrefixHeader.pch; sourceTree = "<group>"; };
+		341FFFF51E6C5ADB004D13C2 /* DPProfileService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPProfileService.h; sourceTree = "<group>"; };
+		341FFFF61E6C5ADB004D13C2 /* DPProfileService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPProfileService.m; sourceTree = "<group>"; };
+		341FFFF91E6C5B08004D13C2 /* DPTrackService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackService.h; sourceTree = "<group>"; };
+		341FFFFA1E6C5B08004D13C2 /* DPTrackService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTrackService.m; sourceTree = "<group>"; };
 		638EDC92D95596ECF77552C8 /* Pods-SoundCloudSandbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloudSandbox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloudSandbox/Pods-SoundCloudSandbox.debug.xcconfig"; sourceTree = "<group>"; };
-		94935BDC29DD33536910C4F4 /* Pods_SoundCloudSandbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoundCloudSandbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D53BD4FE2E217BE62A7EFD9 /* Pods_SoundCloudSandbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoundCloudSandbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E728664F99199056F5E79186 /* Pods-SoundCloudSandbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloudSandbox.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloudSandbox/Pods-SoundCloudSandbox.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,7 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E838B4A869F19C2624241C4E /* Pods_SoundCloudSandbox.framework in Frameworks */,
+				74288C6010FD5F7DB5044A87 /* Pods_SoundCloudSandbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,8 +92,10 @@
 		341FFFBE1E6B6A5E004D13C2 /* SoundCloudSandbox */ = {
 			isa = PBXGroup;
 			children = (
+				341F002F1E6E0630004D13C2 /* APIPlayground.playground */,
 				341FFFC21E6B6A5E004D13C2 /* DPAppDelegate.h */,
 				341FFFC31E6B6A5E004D13C2 /* DPAppDelegate.m */,
+				341FFFF81E6C5AE7004D13C2 /* Core */,
 				341FFFEF1E6B8C82004D13C2 /* Common */,
 				341FFFE51E6B70B5004D13C2 /* Modules */,
 				341FFFBF1E6B6A5E004D13C2 /* Supporting Files */,
@@ -99,10 +108,10 @@
 			children = (
 				341FFFC81E6B6A5E004D13C2 /* Main.storyboard */,
 				341FFFCD1E6B6A5E004D13C2 /* LaunchScreen.storyboard */,
+				341FFFF01E6C553F004D13C2 /* DPPrefixHeader.pch */,
 				341FFFCB1E6B6A5E004D13C2 /* Assets.xcassets */,
 				341FFFD01E6B6A5E004D13C2 /* Info.plist */,
 				341FFFC01E6B6A5E004D13C2 /* main.m */,
-				341FFFF01E6C553F004D13C2 /* DPPrefixHeader.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -144,10 +153,21 @@
 			name = Common;
 			sourceTree = "<group>";
 		};
+		341FFFF81E6C5AE7004D13C2 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				341FFFF91E6C5B08004D13C2 /* DPTrackService.h */,
+				341FFFFA1E6C5B08004D13C2 /* DPTrackService.m */,
+				341FFFF51E6C5ADB004D13C2 /* DPProfileService.h */,
+				341FFFF61E6C5ADB004D13C2 /* DPProfileService.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
 		832C3D3B83889CDF7F3E994D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				94935BDC29DD33536910C4F4 /* Pods_SoundCloudSandbox.framework */,
+				7D53BD4FE2E217BE62A7EFD9 /* Pods_SoundCloudSandbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -286,12 +306,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				341FFFDB1E6B6CD3004D13C2 /* DPUserProfileViewController.m in Sources */,
+				341FFFFB1E6C5B08004D13C2 /* DPTrackService.m in Sources */,
 				341FFFD81E6B6C96004D13C2 /* DPViewController.m in Sources */,
 				341FFFEE1E6B73CD004D13C2 /* DPView.m in Sources */,
 				341FFFEB1E6B721B004D13C2 /* DPViewModel.m in Sources */,
 				341FFFC71E6B6A5E004D13C2 /* DPRootViewController.m in Sources */,
 				341FFFC41E6B6A5E004D13C2 /* DPAppDelegate.m in Sources */,
 				341FFFC11E6B6A5E004D13C2 /* main.m in Sources */,
+				341FFFF71E6C5ADB004D13C2 /* DPProfileService.m in Sources */,
 				341FFFE81E6B71DA004D13C2 /* DPUserProfileViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,7 +436,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
 				DEVELOPMENT_TEAM = 96XFGSE75Y;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = DPPrefixHeader.pch;
+				GCC_PREFIX_HEADER = SoundCloudSandbox/DPPrefixHeader.pch;
 				INFOPLIST_FILE = SoundCloudSandbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dmpv.SoundCloudSandbox;
@@ -430,7 +452,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
 				DEVELOPMENT_TEAM = 96XFGSE75Y;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = DPPrefixHeader.pch;
+				GCC_PREFIX_HEADER = SoundCloudSandbox/DPPrefixHeader.pch;
 				INFOPLIST_FILE = SoundCloudSandbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dmpv.SoundCloudSandbox;
@@ -457,6 +479,7 @@
 				341FFFD51E6B6A5E004D13C2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

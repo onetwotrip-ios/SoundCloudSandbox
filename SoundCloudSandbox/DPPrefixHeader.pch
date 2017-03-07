@@ -9,6 +9,9 @@
 #ifndef DPPrefixHeader_pch
 #define DPPrefixHeader_pch
 
-#import <CoreGraphics/CGBase.h> // CGFloat
+@import CoreGraphics.CGBase; // CGFloat is here
+@import Foundation;
+#import "extobjc.h" // https://github.com/jspahrsummers/libextobjc
+#import "Aspects.h" // https://github.com/steipete/Aspects
 
 #endif /* DPPrefixHeader_pch */

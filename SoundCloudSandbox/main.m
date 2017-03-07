@@ -6,7 +6,6 @@
 //  Copyright © 2017 dmpv. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
 #import "DPAppDelegate.h"
 
 int main(int argc, char * argv[]) {
