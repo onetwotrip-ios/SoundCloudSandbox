@@ -13,7 +13,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DPViewModel : NSObject <DPViewModelType>
-
 @end
 
 NS_ASSUME_NONNULL_END

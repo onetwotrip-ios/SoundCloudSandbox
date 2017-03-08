@@ -13,7 +13,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DPView : UIView <DPViewType>
-
 @end
 
 NS_ASSUME_NONNULL_END

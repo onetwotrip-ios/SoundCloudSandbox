@@ -43,6 +43,4 @@ task.resume()
 
 
 
-PlaygroundPage.current.needsIndefiniteExecution = true
-
-//let userProfile = 
+PlaygroundPage.current.needsIndefiniteExecution = true 

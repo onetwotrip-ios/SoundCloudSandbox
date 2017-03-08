@@ -1,0 +1,28 @@
+### Headers settings
+company: dmpv
+
+### Xcode project settings
+project_name: SoundCloudSandbox
+xcodeproj_path: SoundCloudSandbox.xcodeproj
+prefix: DP
+
+### Code generation settings section
+# The main project target name
+project_target: SoundCloudSandbox
+
+# The file path for new modules
+project_file_path: SoundCloudSandbox/Modules/
+
+# The Xcode group path to new modules
+project_group_path: SoundCloudSandbox/Modules/
+
+### Dependencies settings section
+podfile_path: Podfile
+
+### Templates
+catalogs:
+- 'https://github.com/onetwotrip-ios/generamba_catalog/'
+templates:
+- {name: mvvm_v}
+- {name: mvvm_vc}
+- {name: mvvm_vm}

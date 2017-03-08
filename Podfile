@@ -4,7 +4,6 @@ use_frameworks!
 
 target 'SoundCloudSandbox' do
 
-    pod 'libextobjc'
     pod 'Aspects'
 
     pod 'PureLayout'

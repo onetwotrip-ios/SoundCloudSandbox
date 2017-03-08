@@ -8,6 +8,8 @@
 
 @import Foundation;
 
+NS_ASSUME_NONNULL_BEGIN
+
 @class RACSignal;
 
 @interface DPProfileService : NSObject
@@ -16,3 +18,5 @@
 - (RACSignal *) loadProfileForUserWithID: (NSUInteger) ID;
 
 @end
+
+NS_ASSUME_NONNULL_END

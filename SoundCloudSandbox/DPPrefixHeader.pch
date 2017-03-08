@@ -10,8 +10,10 @@
 #define DPPrefixHeader_pch
 
 @import CoreGraphics.CGBase; // CGFloat is here
-@import Foundation;
-#import "extobjc.h" // https://github.com/jspahrsummers/libextobjc
+
+@import ReactiveObjC.RACEXTScope;
+@import ReactiveObjC.RACEXTKeyPathCoding;
+
 #import "Aspects.h" // https://github.com/steipete/Aspects
 
 #endif /* DPPrefixHeader_pch */

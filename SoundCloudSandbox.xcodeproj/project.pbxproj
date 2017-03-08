@@ -6,45 +6,63 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		3464E4281E70C91600AC60C9 /* OCLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3464E4291E70C91600AC60C9 /* Build configuration list for PBXAggregateTarget "OCLint" */;
+			buildPhases = (
+				3464E42C1E70C94200AC60C9 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = OCLint;
+			productName = OCLint;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		341F004C1E6F5979004D13C2 /* UIView+DPNibLoadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 341F004B1E6F5979004D13C2 /* UIView+DPNibLoadable.m */; };
+		341F004F1E6F5A51004D13C2 /* UIViewController+DPStoryboardLoadable.m in Sources */ = {isa = PBXBuildFile; fileRef = 341F004E1E6F5A51004D13C2 /* UIViewController+DPStoryboardLoadable.m */; };
 		341FFFC11E6B6A5E004D13C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFC01E6B6A5E004D13C2 /* main.m */; };
 		341FFFC41E6B6A5E004D13C2 /* DPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFC31E6B6A5E004D13C2 /* DPAppDelegate.m */; };
 		341FFFC71E6B6A5E004D13C2 /* DPRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFC61E6B6A5E004D13C2 /* DPRootViewController.m */; };
-		341FFFCA1E6B6A5E004D13C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 341FFFC81E6B6A5E004D13C2 /* Main.storyboard */; };
 		341FFFCC1E6B6A5E004D13C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 341FFFCB1E6B6A5E004D13C2 /* Assets.xcassets */; };
 		341FFFCF1E6B6A5E004D13C2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 341FFFCD1E6B6A5E004D13C2 /* LaunchScreen.storyboard */; };
 		341FFFD81E6B6C96004D13C2 /* DPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFD71E6B6C96004D13C2 /* DPViewController.m */; };
-		341FFFDB1E6B6CD3004D13C2 /* DPUserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFDA1E6B6CD3004D13C2 /* DPUserProfileViewController.m */; };
-		341FFFDD1E6B6D22004D13C2 /* DPUserProfileStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 341FFFDC1E6B6D22004D13C2 /* DPUserProfileStoryboard.storyboard */; };
-		341FFFE81E6B71DA004D13C2 /* DPUserProfileViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFE71E6B71DA004D13C2 /* DPUserProfileViewModel.m */; };
 		341FFFEB1E6B721B004D13C2 /* DPViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFEA1E6B721B004D13C2 /* DPViewModel.m */; };
 		341FFFEE1E6B73CD004D13C2 /* DPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFED1E6B73CD004D13C2 /* DPView.m */; };
 		341FFFF71E6C5ADB004D13C2 /* DPProfileService.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFF61E6C5ADB004D13C2 /* DPProfileService.m */; };
 		341FFFFB1E6C5B08004D13C2 /* DPTrackService.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFFA1E6C5B08004D13C2 /* DPTrackService.m */; };
+		3464E40F1E70A31E00AC60C9 /* DPTrackListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3464E40A1E70A31E00AC60C9 /* DPTrackListViewController.m */; };
+		3464E4101E70A31E00AC60C9 /* DPTrackListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3464E40B1E70A31E00AC60C9 /* DPTrackListViewController.storyboard */; };
+		3464E4111E70A31E00AC60C9 /* DPTrackListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3464E40D1E70A31E00AC60C9 /* DPTrackListViewModel.m */; };
+		3464E4191E70A36A00AC60C9 /* DPTrackCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3464E4141E70A36A00AC60C9 /* DPTrackCardView.m */; };
+		3464E41A1E70A36A00AC60C9 /* DPTrackCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3464E4151E70A36A00AC60C9 /* DPTrackCardView.xib */; };
+		3464E41B1E70A36A00AC60C9 /* DPTrackCardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3464E4171E70A36A00AC60C9 /* DPTrackCardViewModel.m */; };
+		3464E41E1E70A39A00AC60C9 /* DPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3464E41D1E70A39A00AC60C9 /* DPTableViewCell.m */; };
+		3464E4231E70B01500AC60C9 /* DPTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 3464E4221E70B01500AC60C9 /* DPTrack.m */; };
+		3464E4261E70C1ED00AC60C9 /* DPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3464E4251E70C1ED00AC60C9 /* DPUser.m */; };
 		74288C6010FD5F7DB5044A87 /* Pods_SoundCloudSandbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D53BD4FE2E217BE62A7EFD9 /* Pods_SoundCloudSandbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		341F002F1E6E0630004D13C2 /* APIPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = APIPlayground.playground; sourceTree = "<group>"; };
+		341F004A1E6F5979004D13C2 /* DPNibLoadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPNibLoadable.h; sourceTree = "<group>"; };
+		341F004B1E6F5979004D13C2 /* UIView+DPNibLoadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DPNibLoadable.m"; sourceTree = "<group>"; };
+		341F004E1E6F5A51004D13C2 /* UIViewController+DPStoryboardLoadable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+DPStoryboardLoadable.m"; sourceTree = "<group>"; };
+		341F00631E6F6DB5004D13C2 /* DPViewType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPViewType.h; sourceTree = "<group>"; };
+		341F00641E6F6DC2004D13C2 /* DPViewModelType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPViewModelType.h; sourceTree = "<group>"; };
 		341FFFBC1E6B6A5E004D13C2 /* SoundCloudSandbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoundCloudSandbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		341FFFC01E6B6A5E004D13C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		341FFFC21E6B6A5E004D13C2 /* DPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPAppDelegate.h; sourceTree = "<group>"; };
 		341FFFC31E6B6A5E004D13C2 /* DPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPAppDelegate.m; sourceTree = "<group>"; };
 		341FFFC51E6B6A5E004D13C2 /* DPRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPRootViewController.h; sourceTree = "<group>"; };
 		341FFFC61E6B6A5E004D13C2 /* DPRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPRootViewController.m; sourceTree = "<group>"; };
-		341FFFC91E6B6A5E004D13C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		341FFFCB1E6B6A5E004D13C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		341FFFCE1E6B6A5E004D13C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		341FFFD01E6B6A5E004D13C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		341FFFD61E6B6C96004D13C2 /* DPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPViewController.h; sourceTree = "<group>"; };
 		341FFFD71E6B6C96004D13C2 /* DPViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPViewController.m; sourceTree = "<group>"; };
-		341FFFD91E6B6CD3004D13C2 /* DPUserProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUserProfileViewController.h; sourceTree = "<group>"; };
-		341FFFDA1E6B6CD3004D13C2 /* DPUserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPUserProfileViewController.m; sourceTree = "<group>"; };
-		341FFFDC1E6B6D22004D13C2 /* DPUserProfileStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DPUserProfileStoryboard.storyboard; sourceTree = "<group>"; };
-		341FFFDF1E6B6FAC004D13C2 /* DPViewType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPViewType.h; sourceTree = "<group>"; };
-		341FFFE21E6B6FFC004D13C2 /* DPViewModelType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPViewModelType.h; sourceTree = "<group>"; };
-		341FFFE61E6B71DA004D13C2 /* DPUserProfileViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUserProfileViewModel.h; sourceTree = "<group>"; };
-		341FFFE71E6B71DA004D13C2 /* DPUserProfileViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPUserProfileViewModel.m; sourceTree = "<group>"; };
 		341FFFE91E6B721B004D13C2 /* DPViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPViewModel.h; sourceTree = "<group>"; };
 		341FFFEA1E6B721B004D13C2 /* DPViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPViewModel.m; sourceTree = "<group>"; };
 		341FFFEC1E6B73CD004D13C2 /* DPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPView.h; sourceTree = "<group>"; };
@@ -54,6 +72,25 @@
 		341FFFF61E6C5ADB004D13C2 /* DPProfileService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPProfileService.m; sourceTree = "<group>"; };
 		341FFFF91E6C5B08004D13C2 /* DPTrackService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackService.h; sourceTree = "<group>"; };
 		341FFFFA1E6C5B08004D13C2 /* DPTrackService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTrackService.m; sourceTree = "<group>"; };
+		3464E3E41E7099DF00AC60C9 /* DPStoryboardLoadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPStoryboardLoadable.h; sourceTree = "<group>"; };
+		3464E4091E70A31E00AC60C9 /* DPTrackListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackListViewController.h; sourceTree = "<group>"; };
+		3464E40A1E70A31E00AC60C9 /* DPTrackListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTrackListViewController.m; sourceTree = "<group>"; };
+		3464E40B1E70A31E00AC60C9 /* DPTrackListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DPTrackListViewController.storyboard; sourceTree = "<group>"; };
+		3464E40C1E70A31E00AC60C9 /* DPTrackListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackListViewModel.h; sourceTree = "<group>"; };
+		3464E40D1E70A31E00AC60C9 /* DPTrackListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTrackListViewModel.m; sourceTree = "<group>"; };
+		3464E40E1E70A31E00AC60C9 /* DPTrackListViewModelType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackListViewModelType.h; sourceTree = "<group>"; };
+		3464E4131E70A36A00AC60C9 /* DPTrackCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackCardView.h; sourceTree = "<group>"; };
+		3464E4141E70A36A00AC60C9 /* DPTrackCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTrackCardView.m; sourceTree = "<group>"; };
+		3464E4151E70A36A00AC60C9 /* DPTrackCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DPTrackCardView.xib; sourceTree = "<group>"; };
+		3464E4161E70A36A00AC60C9 /* DPTrackCardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackCardViewModel.h; sourceTree = "<group>"; };
+		3464E4171E70A36A00AC60C9 /* DPTrackCardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTrackCardViewModel.m; sourceTree = "<group>"; };
+		3464E4181E70A36A00AC60C9 /* DPTrackCardViewModelType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackCardViewModelType.h; sourceTree = "<group>"; };
+		3464E41C1E70A39A00AC60C9 /* DPTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTableViewCell.h; sourceTree = "<group>"; };
+		3464E41D1E70A39A00AC60C9 /* DPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTableViewCell.m; sourceTree = "<group>"; };
+		3464E4211E70B01500AC60C9 /* DPTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrack.h; sourceTree = "<group>"; };
+		3464E4221E70B01500AC60C9 /* DPTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTrack.m; sourceTree = "<group>"; };
+		3464E4241E70C1ED00AC60C9 /* DPUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUser.h; sourceTree = "<group>"; };
+		3464E4251E70C1ED00AC60C9 /* DPUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPUser.m; sourceTree = "<group>"; };
 		638EDC92D95596ECF77552C8 /* Pods-SoundCloudSandbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloudSandbox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloudSandbox/Pods-SoundCloudSandbox.debug.xcconfig"; sourceTree = "<group>"; };
 		7D53BD4FE2E217BE62A7EFD9 /* Pods_SoundCloudSandbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoundCloudSandbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E728664F99199056F5E79186 /* Pods-SoundCloudSandbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloudSandbox.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloudSandbox/Pods-SoundCloudSandbox.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +108,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		341F00501E6F5BEB004D13C2 /* UI Categories */ = {
+			isa = PBXGroup;
+			children = (
+				341F004A1E6F5979004D13C2 /* DPNibLoadable.h */,
+				341F004B1E6F5979004D13C2 /* UIView+DPNibLoadable.m */,
+				3464E3E41E7099DF00AC60C9 /* DPStoryboardLoadable.h */,
+				341F004E1E6F5A51004D13C2 /* UIViewController+DPStoryboardLoadable.m */,
+			);
+			name = "UI Categories";
+			sourceTree = "<group>";
+		};
 		341FFFB31E6B6A5E004D13C2 = {
 			isa = PBXGroup;
 			children = (
@@ -95,9 +143,13 @@
 				341F002F1E6E0630004D13C2 /* APIPlayground.playground */,
 				341FFFC21E6B6A5E004D13C2 /* DPAppDelegate.h */,
 				341FFFC31E6B6A5E004D13C2 /* DPAppDelegate.m */,
+				3464E41C1E70A39A00AC60C9 /* DPTableViewCell.h */,
+				3464E41D1E70A39A00AC60C9 /* DPTableViewCell.m */,
+				341F00501E6F5BEB004D13C2 /* UI Categories */,
+				3464E4271E70C28300AC60C9 /* Model */,
 				341FFFF81E6C5AE7004D13C2 /* Core */,
 				341FFFEF1E6B8C82004D13C2 /* Common */,
-				341FFFE51E6B70B5004D13C2 /* Modules */,
+				3464E3B11E70927800AC60C9 /* Modules */,
 				341FFFBF1E6B6A5E004D13C2 /* Supporting Files */,
 			);
 			path = SoundCloudSandbox;
@@ -106,7 +158,6 @@
 		341FFFBF1E6B6A5E004D13C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				341FFFC81E6B6A5E004D13C2 /* Main.storyboard */,
 				341FFFCD1E6B6A5E004D13C2 /* LaunchScreen.storyboard */,
 				341FFFF01E6C553F004D13C2 /* DPPrefixHeader.pch */,
 				341FFFCB1E6B6A5E004D13C2 /* Assets.xcassets */,
@@ -116,37 +167,17 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		341FFFDE1E6B6D27004D13C2 /* UserProfileModule */ = {
-			isa = PBXGroup;
-			children = (
-				341FFFE61E6B71DA004D13C2 /* DPUserProfileViewModel.h */,
-				341FFFE71E6B71DA004D13C2 /* DPUserProfileViewModel.m */,
-				341FFFD91E6B6CD3004D13C2 /* DPUserProfileViewController.h */,
-				341FFFDA1E6B6CD3004D13C2 /* DPUserProfileViewController.m */,
-				341FFFDC1E6B6D22004D13C2 /* DPUserProfileStoryboard.storyboard */,
-			);
-			name = UserProfileModule;
-			sourceTree = "<group>";
-		};
-		341FFFE51E6B70B5004D13C2 /* Modules */ = {
-			isa = PBXGroup;
-			children = (
-				341FFFDE1E6B6D27004D13C2 /* UserProfileModule */,
-			);
-			name = Modules;
-			sourceTree = "<group>";
-		};
 		341FFFEF1E6B8C82004D13C2 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				341FFFC51E6B6A5E004D13C2 /* DPRootViewController.h */,
 				341FFFC61E6B6A5E004D13C2 /* DPRootViewController.m */,
-				341FFFDF1E6B6FAC004D13C2 /* DPViewType.h */,
-				341FFFE21E6B6FFC004D13C2 /* DPViewModelType.h */,
 				341FFFD61E6B6C96004D13C2 /* DPViewController.h */,
 				341FFFD71E6B6C96004D13C2 /* DPViewController.m */,
+				341F00641E6F6DC2004D13C2 /* DPViewModelType.h */,
 				341FFFE91E6B721B004D13C2 /* DPViewModel.h */,
 				341FFFEA1E6B721B004D13C2 /* DPViewModel.m */,
+				341F00631E6F6DB5004D13C2 /* DPViewType.h */,
 				341FFFEC1E6B73CD004D13C2 /* DPView.h */,
 				341FFFED1E6B73CD004D13C2 /* DPView.m */,
 			);
@@ -162,6 +193,52 @@
 				341FFFF61E6C5ADB004D13C2 /* DPProfileService.m */,
 			);
 			name = Core;
+			sourceTree = "<group>";
+		};
+		3464E3B11E70927800AC60C9 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3464E4121E70A36A00AC60C9 /* TrackCard */,
+				3464E4081E70A31E00AC60C9 /* TrackList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3464E4081E70A31E00AC60C9 /* TrackList */ = {
+			isa = PBXGroup;
+			children = (
+				3464E4091E70A31E00AC60C9 /* DPTrackListViewController.h */,
+				3464E40A1E70A31E00AC60C9 /* DPTrackListViewController.m */,
+				3464E40B1E70A31E00AC60C9 /* DPTrackListViewController.storyboard */,
+				3464E40C1E70A31E00AC60C9 /* DPTrackListViewModel.h */,
+				3464E40D1E70A31E00AC60C9 /* DPTrackListViewModel.m */,
+				3464E40E1E70A31E00AC60C9 /* DPTrackListViewModelType.h */,
+			);
+			path = TrackList;
+			sourceTree = "<group>";
+		};
+		3464E4121E70A36A00AC60C9 /* TrackCard */ = {
+			isa = PBXGroup;
+			children = (
+				3464E4131E70A36A00AC60C9 /* DPTrackCardView.h */,
+				3464E4141E70A36A00AC60C9 /* DPTrackCardView.m */,
+				3464E4151E70A36A00AC60C9 /* DPTrackCardView.xib */,
+				3464E4161E70A36A00AC60C9 /* DPTrackCardViewModel.h */,
+				3464E4171E70A36A00AC60C9 /* DPTrackCardViewModel.m */,
+				3464E4181E70A36A00AC60C9 /* DPTrackCardViewModelType.h */,
+			);
+			path = TrackCard;
+			sourceTree = "<group>";
+		};
+		3464E4271E70C28300AC60C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3464E4211E70B01500AC60C9 /* DPTrack.h */,
+				3464E4221E70B01500AC60C9 /* DPTrack.m */,
+				3464E4241E70C1ED00AC60C9 /* DPUser.h */,
+				3464E4251E70C1ED00AC60C9 /* DPUser.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		832C3D3B83889CDF7F3E994D /* Frameworks */ = {
@@ -218,6 +295,11 @@
 						DevelopmentTeam = 96XFGSE75Y;
 						ProvisioningStyle = Automatic;
 					};
+					3464E4281E70C91600AC60C9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 96XFGSE75Y;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 341FFFB71E6B6A5E004D13C2 /* Build configuration list for PBXProject "SoundCloudSandbox" */;
@@ -234,6 +316,7 @@
 			projectRoot = "";
 			targets = (
 				341FFFBB1E6B6A5E004D13C2 /* SoundCloudSandbox */,
+				3464E4281E70C91600AC60C9 /* OCLint */,
 			);
 		};
 /* End PBXProject section */
@@ -243,16 +326,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3464E4101E70A31E00AC60C9 /* DPTrackListViewController.storyboard in Resources */,
 				341FFFCF1E6B6A5E004D13C2 /* LaunchScreen.storyboard in Resources */,
+				3464E41A1E70A36A00AC60C9 /* DPTrackCardView.xib in Resources */,
 				341FFFCC1E6B6A5E004D13C2 /* Assets.xcassets in Resources */,
-				341FFFDD1E6B6D22004D13C2 /* DPUserProfileStoryboard.storyboard in Resources */,
-				341FFFCA1E6B6A5E004D13C2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3464E42C1E70C94200AC60C9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "source ~/.bash_profile\n\n\nhash oclint &> /dev/null\nif [ $? -eq 1 ]; then\necho >&2 \"oclint not found, analyzing stopped\"\nexit 1\nfi\n\ncd ${TARGET_TEMP_DIR}\n\nif [ ! -f compile_commands.json ]; then\necho \"[*] compile_commands.json not found, possibly clean was performed\"\necho \"[*] starting xcodebuild to rebuild the project..\"\n# clean previous output\nif [ -f xcodebuild.log ]; then\nrm xcodebuild.log\nfi\n\ncd ${SRCROOT}\n\nxcodebuild clean\n\n#build xcodebuild.log\nxcodebuild | tee ${TARGET_TEMP_DIR}/xcodebuild.log\n\necho \"[*] transforming xcodebuild.log into compile_commands.json...\"\ncd ${TARGET_TEMP_DIR}\n#transform it into compile_commands.json\noclint-xcodebuild\n\nfi\n\n#if [-d report.html]; then\n#rm report.html\n#fi\n\n\n#run static analyzer\n#oclint-json-compilation-database -- -o=./report.html -html\n\necho \"[*] starting analyzing\"\ncd ${TARGET_TEMP_DIR}\noclint-json-compilation-database | sed 's/\\(.*\\.\\m\\{1,2\\}:[0-9]*:[0-9]*:\\)/\\1 warning:/'\n";
+		};
 		3F22AFDA2B245FA82CE061BB /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -305,30 +401,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				341FFFDB1E6B6CD3004D13C2 /* DPUserProfileViewController.m in Sources */,
 				341FFFFB1E6C5B08004D13C2 /* DPTrackService.m in Sources */,
+				3464E4111E70A31E00AC60C9 /* DPTrackListViewModel.m in Sources */,
+				341F004C1E6F5979004D13C2 /* UIView+DPNibLoadable.m in Sources */,
 				341FFFD81E6B6C96004D13C2 /* DPViewController.m in Sources */,
+				3464E4191E70A36A00AC60C9 /* DPTrackCardView.m in Sources */,
 				341FFFEE1E6B73CD004D13C2 /* DPView.m in Sources */,
 				341FFFEB1E6B721B004D13C2 /* DPViewModel.m in Sources */,
 				341FFFC71E6B6A5E004D13C2 /* DPRootViewController.m in Sources */,
+				341F004F1E6F5A51004D13C2 /* UIViewController+DPStoryboardLoadable.m in Sources */,
 				341FFFC41E6B6A5E004D13C2 /* DPAppDelegate.m in Sources */,
+				3464E41B1E70A36A00AC60C9 /* DPTrackCardViewModel.m in Sources */,
+				3464E41E1E70A39A00AC60C9 /* DPTableViewCell.m in Sources */,
+				3464E4261E70C1ED00AC60C9 /* DPUser.m in Sources */,
 				341FFFC11E6B6A5E004D13C2 /* main.m in Sources */,
+				3464E4231E70B01500AC60C9 /* DPTrack.m in Sources */,
+				3464E40F1E70A31E00AC60C9 /* DPTrackListViewController.m in Sources */,
 				341FFFF71E6C5ADB004D13C2 /* DPProfileService.m in Sources */,
-				341FFFE81E6B71DA004D13C2 /* DPUserProfileViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		341FFFC81E6B6A5E004D13C2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				341FFFC91E6B6A5E004D13C2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		341FFFCD1E6B6A5E004D13C2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -460,6 +555,22 @@
 			};
 			name = Release;
 		};
+		3464E42A1E70C91600AC60C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 96XFGSE75Y;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3464E42B1E70C91600AC60C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 96XFGSE75Y;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -480,6 +591,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		3464E4291E70C91600AC60C9 /* Build configuration list for PBXAggregateTarget "OCLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3464E42A1E70C91600AC60C9 /* Debug */,
+				3464E42B1E70C91600AC60C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,28 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+#import "{{ prefix }}ViewModelType.h"
+
+NS_ASSUME_NONNULL_BEGIN
+
+@protocol {{ prefix }}{{ module_info.name }}ViewModelInputs <{{ prefix }}ViewModelInputs>
+@end
+
+@protocol {{ prefix }}{{ module_info.name }}ViewModelInOutputs <{{ prefix }}ViewModelInOutputs>
+@end
+
+@protocol {{ prefix }}{{ module_info.name }}ViewModelOutputs <{{ prefix }}ViewModelOutputs>
+@end
+
+@protocol {{ prefix }}{{ module_info.name }}ViewModelType <{{ prefix }}ViewModelType>
+@property (nonatomic, readonly) id<{{ prefix }}{{ module_info.name }}ViewModelInputs> inputs;
+@property (nonatomic, readonly) id<{{ prefix }}{{ module_info.name }}ViewModelOutputs> outputs;
+@property (nonatomic, readonly) id<{{ prefix }}{{ module_info.name }}ViewModelInOutputs> inOutputs;
+@end
+
+NS_ASSUME_NONNULL_END

@@ -16,6 +16,7 @@
 
 @implementation DPViewController
 @dynamic view;
+@dynamic viewModel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -30,5 +31,7 @@
 - (void)loadView {
     self.view = [[DPView alloc] init];
 }
+
+
 
 @end

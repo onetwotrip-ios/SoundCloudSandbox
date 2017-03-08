@@ -8,6 +8,10 @@
 
 @import Foundation;
 
+NS_ASSUME_NONNULL_BEGIN
+
 @interface DPTrackService : NSObject
 
 @end
+
+NS_ASSUME_NONNULL_END

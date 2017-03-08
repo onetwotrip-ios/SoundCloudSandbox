@@ -1,0 +1,16 @@
+# Template information section
+name: "mvvm_vc"
+summary: "MVVM module. View part (UIViewController)"
+author: "Dmitry Purtov"
+version: "1.0"
+license: "MIT"
+
+# Declarations for code files
+code_files:
+- {name: ViewController.h, path: Code/ViewController.h.liquid}
+- {name: ViewController.m, path: Code/ViewController.m.liquid}
+- {name: ViewController.storyboard, path: Code/ViewController.storyboard.liquid}
+
+# Template dependencies
+dependencies:
+- ReactiveObjC

@@ -1,0 +1,16 @@
+# Template information section
+name: "mvvm_v"
+summary: "MVVM module. View part (UIView)."
+author: "Dmitry Purtov"
+version: "1.0"
+license: "MIT"
+
+# Declarations for code files
+code_files:
+- {name: View.h, path: Code/View.h.liquid}
+- {name: View.m, path: Code/View.m.liquid}
+- {name: View.xib, path: Code/View.xib.liquid}
+
+# Template dependencies
+dependencies:
+- ReactiveObjC
