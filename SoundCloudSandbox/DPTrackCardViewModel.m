@@ -12,7 +12,6 @@
 
 #import "DPTrack.h"
 
-
 //--------------------------------------------------------------------------------------------------
 #pragma mark - DPTrackCardViewModel Implementation
 

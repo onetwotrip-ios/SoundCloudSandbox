@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DPUserCardView">
+            <rect key="frame" x="0.0" y="0.0" width="382" height="168"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="1" verticalCompressionResistancePriority="1" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sj5-cp-zQT">
+                    <rect key="frame" x="140" y="10" width="101" height="105"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="John Appleseed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svo-wk-TQk">
+                    <rect key="frame" x="129" y="133" width="124" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="svo-wk-TQk" firstAttribute="top" secondItem="sj5-cp-zQT" secondAttribute="bottom" constant="20" id="6vP-00-aD3"/>
+                <constraint firstAttribute="bottomMargin" secondItem="svo-wk-TQk" secondAttribute="bottom" id="T47-rl-mAq"/>
+                <constraint firstItem="svo-wk-TQk" firstAttribute="centerX" secondItem="sj5-cp-zQT" secondAttribute="centerX" id="jml-kh-SkG"/>
+                <constraint firstItem="sj5-cp-zQT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="topMargin" constant="20" id="xCI-Ui-SEW"/>
+                <constraint firstItem="sj5-cp-zQT" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zz8-0O-j9C"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="avatarImageView" destination="sj5-cp-zQT" id="gKe-Dq-k9p"/>
+                <outlet property="fullNameLabel" destination="svo-wk-TQk" id="o2P-zu-XOM"/>
+            </connections>
+            <point key="canvasLocation" x="63" y="-162"/>
+        </view>
+    </objects>
+</document>

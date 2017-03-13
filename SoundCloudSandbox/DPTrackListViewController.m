@@ -40,6 +40,17 @@ NS_ASSUME_NONNULL_END
 @dynamic viewModel;
 
 //..................................................................................................
+#pragma mark - Public
+
+- (void)setHeaderView:(UIView *)headerView {
+    self.tableView.tableHeaderView = headerView;
+}
+
+- (UIView *)headerView {
+    return self.tableView.tableHeaderView;
+}
+
+//..................................................................................................
 #pragma mark - Overrides
 
 - (void)viewDidLoad {
@@ -49,9 +60,6 @@ NS_ASSUME_NONNULL_END
     const CGFloat kEstimatedRowHeight = 44.0;
     self.tableView.estimatedRowHeight = kEstimatedRowHeight;
     self.tableView.allowsSelection = NO;
-    
-    [UIView new];
-    self.tableView.tableHeaderView =
 }
 
 - (void)observeViewModel {

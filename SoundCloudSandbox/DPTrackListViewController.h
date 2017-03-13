@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol DPTrackListViewModelType;
 
 @interface DPTrackListViewController : DPViewController <DPStoryboardLoadable>
+@property (nonatomic, strong) UIView *headerView;
 @property (nonatomic, strong) id<DPTrackListViewModelType> viewModel;
 @end
 

@@ -47,6 +47,9 @@
 		34A41F121E75E462009AA6A1 /* DPJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A41F111E75E462009AA6A1 /* DPJSONParser.m */; };
 		34A41F1A1E761E8A009AA6A1 /* DPTrack+DPDummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A41F191E761E8A009AA6A1 /* DPTrack+DPDummy.m */; };
 		34A41F1E1E76247C009AA6A1 /* NSArray+DPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A41F1D1E76247C009AA6A1 /* NSArray+DPAdditions.m */; };
+		34A41F311E766247009AA6A1 /* DPUserCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A41F2C1E766247009AA6A1 /* DPUserCardView.m */; };
+		34A41F321E766247009AA6A1 /* DPUserCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34A41F2D1E766247009AA6A1 /* DPUserCardView.xib */; };
+		34A41F351E76629E009AA6A1 /* DPUserCardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A41F2F1E766247009AA6A1 /* DPUserCardViewModel.m */; };
 		34B6916B1E70E740005A8ECD /* DPSortComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B6916A1E70E740005A8ECD /* DPSortComponent.m */; };
 		74288C6010FD5F7DB5044A87 /* Pods_SoundCloudSandbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D53BD4FE2E217BE62A7EFD9 /* Pods_SoundCloudSandbox.framework */; };
 /* End PBXBuildFile section */
@@ -111,11 +114,20 @@
 		34A41F1B1E761ED0009AA6A1 /* DPDummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPDummy.h; sourceTree = "<group>"; };
 		34A41F1C1E76247C009AA6A1 /* NSArray+DPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DPAdditions.h"; sourceTree = "<group>"; };
 		34A41F1D1E76247C009AA6A1 /* NSArray+DPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DPAdditions.m"; sourceTree = "<group>"; };
+		34A41F2B1E766247009AA6A1 /* DPUserCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUserCardView.h; sourceTree = "<group>"; };
+		34A41F2C1E766247009AA6A1 /* DPUserCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPUserCardView.m; sourceTree = "<group>"; };
+		34A41F2D1E766247009AA6A1 /* DPUserCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DPUserCardView.xib; sourceTree = "<group>"; };
+		34A41F2E1E766247009AA6A1 /* DPUserCardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUserCardViewModel.h; sourceTree = "<group>"; };
+		34A41F2F1E766247009AA6A1 /* DPUserCardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPUserCardViewModel.m; sourceTree = "<group>"; };
+		34A41F301E766247009AA6A1 /* DPUserCardViewModelType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUserCardViewModelType.h; sourceTree = "<group>"; };
 		34B691691E70E740005A8ECD /* DPSortComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSortComponent.h; sourceTree = "<group>"; };
 		34B6916A1E70E740005A8ECD /* DPSortComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSortComponent.m; sourceTree = "<group>"; };
 		34B6916E1E70EE67005A8ECD /* DPDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPDefinitions.h; sourceTree = "<group>"; };
 		34B6916F1E70F9C7005A8ECD /* DPKVODependencyMapProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPKVODependencyMapProvider.h; sourceTree = "<group>"; };
+		38C718A344660318C835E131 /* DPUserCardViewModelType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DPUserCardViewModelType.h; sourceTree = "<group>"; };
+		563944D75212A7A1D0E75F3F /* DPUserCardViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DPUserCardViewModel.m; sourceTree = "<group>"; };
 		638EDC92D95596ECF77552C8 /* Pods-SoundCloudSandbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloudSandbox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloudSandbox/Pods-SoundCloudSandbox.debug.xcconfig"; sourceTree = "<group>"; };
+		7B821226947EFE7DFF95B9A5 /* DPUserCardViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DPUserCardViewModel.h; sourceTree = "<group>"; };
 		7D53BD4FE2E217BE62A7EFD9 /* Pods_SoundCloudSandbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoundCloudSandbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E728664F99199056F5E79186 /* Pods-SoundCloudSandbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloudSandbox.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloudSandbox/Pods-SoundCloudSandbox.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,6 +189,7 @@
 				3434F2D01E71FDA2009EFBB5 /* Modules */,
 				341FFFEF1E6B8C82004D13C2 /* Common */,
 				341FFFBF1E6B6A5E004D13C2 /* Supporting Files */,
+				E201A66CCDAD3B7F120411F8 /* UserCard */,
 			);
 			path = SoundCloudSandbox;
 			sourceTree = "<group>";
@@ -230,6 +243,7 @@
 		3434F2D01E71FDA2009EFBB5 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				34A41F341E76624B009AA6A1 /* UserCard */,
 				3434F2ED1E71FE11009EFBB5 /* TrackCard */,
 				3434F2E31E71FDF9009EFBB5 /* TrackList */,
 			);
@@ -299,6 +313,19 @@
 			name = Dummies;
 			sourceTree = "<group>";
 		};
+		34A41F341E76624B009AA6A1 /* UserCard */ = {
+			isa = PBXGroup;
+			children = (
+				34A41F2B1E766247009AA6A1 /* DPUserCardView.h */,
+				34A41F2C1E766247009AA6A1 /* DPUserCardView.m */,
+				34A41F2D1E766247009AA6A1 /* DPUserCardView.xib */,
+				34A41F2E1E766247009AA6A1 /* DPUserCardViewModel.h */,
+				34A41F2F1E766247009AA6A1 /* DPUserCardViewModel.m */,
+				34A41F301E766247009AA6A1 /* DPUserCardViewModelType.h */,
+			);
+			name = UserCard;
+			sourceTree = "<group>";
+		};
 		832C3D3B83889CDF7F3E994D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +341,16 @@
 				E728664F99199056F5E79186 /* Pods-SoundCloudSandbox.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E201A66CCDAD3B7F120411F8 /* UserCard */ = {
+			isa = PBXGroup;
+			children = (
+				7B821226947EFE7DFF95B9A5 /* DPUserCardViewModel.h */,
+				563944D75212A7A1D0E75F3F /* DPUserCardViewModel.m */,
+				38C718A344660318C835E131 /* DPUserCardViewModelType.h */,
+			);
+			path = UserCard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -385,6 +422,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3434F2E11E71FDF2009EFBB5 /* DPTrackListViewController.storyboard in Resources */,
+				34A41F321E766247009AA6A1 /* DPUserCardView.xib in Resources */,
 				341FFFCF1E6B6A5E004D13C2 /* LaunchScreen.storyboard in Resources */,
 				3434F2EB1E71FE0C009EFBB5 /* DPTrackCardView.xib in Resources */,
 				341FFFCC1E6B6A5E004D13C2 /* Assets.xcassets in Resources */,
@@ -459,7 +497,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34A41F351E76629E009AA6A1 /* DPUserCardViewModel.m in Sources */,
 				341FFFFB1E6C5B08004D13C2 /* DPTrackService.m in Sources */,
+				34A41F311E766247009AA6A1 /* DPUserCardView.m in Sources */,
 				34A41F091E75D951009AA6A1 /* DPModel.m in Sources */,
 				3434F2E01E71FDF2009EFBB5 /* DPTrackListViewController.m in Sources */,
 				3434F2E21E71FDF2009EFBB5 /* DPTrackListViewModel.m in Sources */,

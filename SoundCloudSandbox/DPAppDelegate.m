@@ -9,12 +9,18 @@
 #import "DPAppDelegate.h"
 
 #import "DPRootViewController.h"
+
 #import "DPTrackListViewController.h"
 #import "DPTrackListViewModel.h"
+
+#import "DPUserCardViewModel.h"
+#import "DPUserCardView.h"
 
 #import "DPTrackService.h"
 #import "DPTrack+DPDummy.h"
 #import "DPTrackCardView.h"
+
+#import "DPUser.h"
 
 @import PureLayout;
 
@@ -42,6 +48,12 @@
     
     trackListVM.tracks = tracks;
     
+    DPUserCardView *userCardView = [DPUserCardView dp_loadFromNib];
+    DPUserCardViewModel *userCardVM = [DPUserCardViewModel new];
+    userCardVM.user = [[DPUser alloc] initWithID: 1 firstName: @"ivan" lastName: @"petrov" avatarImageURL: [NSURL URLWithString: @"https://ya.ru"]];
+    userCardView.viewModel = userCardVM;
+    
+    trackListVC.headerView = userCardView;
     
     return YES;
 }

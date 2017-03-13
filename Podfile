@@ -9,6 +9,8 @@ target 'SoundCloudSandbox' do
     pod 'PureLayout'
 
     pod 'ReactiveObjC'
+    
+    pod 'SDWebImage'
 
     pod 'Reveal-SDK', :configurations => ['Debug']
 

@@ -8,51 +8,31 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 		<key>Pods-SoundCloudSandbox.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>PureLayout.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 		<key>ReactiveObjC.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
 		</dict>
-		<key>libextobjc.xcscheme</key>
+		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4C4AF98845CF16EA3B2F5CCCC6ABCAEF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4EE053CAA134CA7A6FA356E4059CAD1A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>558F9855F4E5AC32B12FBF05AA3570F7</key>
+		<key>19C354CC65A79CB95F6C15A764B95910</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +42,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FF1C3B8C27D28CFB749B0A029BC7E381</key>
+		<key>AE2272ACC7F792F744A82EC6CC8818EC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B7A3CF15AB3DD1B25083657FDE44D884</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D18FD0C0B450CAE340FA69F4144AB2F5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
