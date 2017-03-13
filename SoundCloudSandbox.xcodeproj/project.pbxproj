@@ -33,15 +33,21 @@
 		341FFFEE1E6B73CD004D13C2 /* DPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFED1E6B73CD004D13C2 /* DPView.m */; };
 		341FFFF71E6C5ADB004D13C2 /* DPProfileService.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFF61E6C5ADB004D13C2 /* DPProfileService.m */; };
 		341FFFFB1E6C5B08004D13C2 /* DPTrackService.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFFA1E6C5B08004D13C2 /* DPTrackService.m */; };
-		3464E40F1E70A31E00AC60C9 /* DPTrackListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3464E40A1E70A31E00AC60C9 /* DPTrackListViewController.m */; };
-		3464E4101E70A31E00AC60C9 /* DPTrackListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3464E40B1E70A31E00AC60C9 /* DPTrackListViewController.storyboard */; };
-		3464E4111E70A31E00AC60C9 /* DPTrackListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3464E40D1E70A31E00AC60C9 /* DPTrackListViewModel.m */; };
-		3464E4191E70A36A00AC60C9 /* DPTrackCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3464E4141E70A36A00AC60C9 /* DPTrackCardView.m */; };
-		3464E41A1E70A36A00AC60C9 /* DPTrackCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3464E4151E70A36A00AC60C9 /* DPTrackCardView.xib */; };
-		3464E41B1E70A36A00AC60C9 /* DPTrackCardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3464E4171E70A36A00AC60C9 /* DPTrackCardViewModel.m */; };
+		3434F2E01E71FDF2009EFBB5 /* DPTrackListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3434F2DB1E71FDF2009EFBB5 /* DPTrackListViewController.m */; };
+		3434F2E11E71FDF2009EFBB5 /* DPTrackListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3434F2DC1E71FDF2009EFBB5 /* DPTrackListViewController.storyboard */; };
+		3434F2E21E71FDF2009EFBB5 /* DPTrackListViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3434F2DE1E71FDF2009EFBB5 /* DPTrackListViewModel.m */; };
+		3434F2EA1E71FE0C009EFBB5 /* DPTrackCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3434F2E51E71FE0C009EFBB5 /* DPTrackCardView.m */; };
+		3434F2EB1E71FE0C009EFBB5 /* DPTrackCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3434F2E61E71FE0C009EFBB5 /* DPTrackCardView.xib */; };
+		3434F2EC1E71FE0C009EFBB5 /* DPTrackCardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3434F2E81E71FE0C009EFBB5 /* DPTrackCardViewModel.m */; };
 		3464E41E1E70A39A00AC60C9 /* DPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3464E41D1E70A39A00AC60C9 /* DPTableViewCell.m */; };
 		3464E4231E70B01500AC60C9 /* DPTrack.m in Sources */ = {isa = PBXBuildFile; fileRef = 3464E4221E70B01500AC60C9 /* DPTrack.m */; };
 		3464E4261E70C1ED00AC60C9 /* DPUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3464E4251E70C1ED00AC60C9 /* DPUser.m */; };
+		34A41F061E75BCCC009AA6A1 /* DPTrackJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A41F051E75BCCC009AA6A1 /* DPTrackJSONParser.m */; };
+		34A41F091E75D951009AA6A1 /* DPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A41F081E75D951009AA6A1 /* DPModel.m */; };
+		34A41F121E75E462009AA6A1 /* DPJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A41F111E75E462009AA6A1 /* DPJSONParser.m */; };
+		34A41F1A1E761E8A009AA6A1 /* DPTrack+DPDummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A41F191E761E8A009AA6A1 /* DPTrack+DPDummy.m */; };
+		34A41F1E1E76247C009AA6A1 /* NSArray+DPAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A41F1D1E76247C009AA6A1 /* NSArray+DPAdditions.m */; };
+		34B6916B1E70E740005A8ECD /* DPSortComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B6916A1E70E740005A8ECD /* DPSortComponent.m */; };
 		74288C6010FD5F7DB5044A87 /* Pods_SoundCloudSandbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D53BD4FE2E217BE62A7EFD9 /* Pods_SoundCloudSandbox.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,25 +78,43 @@
 		341FFFF61E6C5ADB004D13C2 /* DPProfileService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPProfileService.m; sourceTree = "<group>"; };
 		341FFFF91E6C5B08004D13C2 /* DPTrackService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackService.h; sourceTree = "<group>"; };
 		341FFFFA1E6C5B08004D13C2 /* DPTrackService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTrackService.m; sourceTree = "<group>"; };
+		3434F2DA1E71FDF2009EFBB5 /* DPTrackListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackListViewController.h; sourceTree = "<group>"; };
+		3434F2DB1E71FDF2009EFBB5 /* DPTrackListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTrackListViewController.m; sourceTree = "<group>"; };
+		3434F2DC1E71FDF2009EFBB5 /* DPTrackListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DPTrackListViewController.storyboard; sourceTree = "<group>"; };
+		3434F2DD1E71FDF2009EFBB5 /* DPTrackListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackListViewModel.h; sourceTree = "<group>"; };
+		3434F2DE1E71FDF2009EFBB5 /* DPTrackListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTrackListViewModel.m; sourceTree = "<group>"; };
+		3434F2DF1E71FDF2009EFBB5 /* DPTrackListViewModelType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackListViewModelType.h; sourceTree = "<group>"; };
+		3434F2E41E71FE0C009EFBB5 /* DPTrackCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackCardView.h; sourceTree = "<group>"; };
+		3434F2E51E71FE0C009EFBB5 /* DPTrackCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTrackCardView.m; sourceTree = "<group>"; };
+		3434F2E61E71FE0C009EFBB5 /* DPTrackCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DPTrackCardView.xib; sourceTree = "<group>"; };
+		3434F2E71E71FE0C009EFBB5 /* DPTrackCardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackCardViewModel.h; sourceTree = "<group>"; };
+		3434F2E81E71FE0C009EFBB5 /* DPTrackCardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTrackCardViewModel.m; sourceTree = "<group>"; };
+		3434F2E91E71FE0C009EFBB5 /* DPTrackCardViewModelType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackCardViewModelType.h; sourceTree = "<group>"; };
+		3434F2EE1E7206C7009EFBB5 /* DPTrackServiceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackServiceType.h; sourceTree = "<group>"; };
 		3464E3E41E7099DF00AC60C9 /* DPStoryboardLoadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPStoryboardLoadable.h; sourceTree = "<group>"; };
-		3464E4091E70A31E00AC60C9 /* DPTrackListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackListViewController.h; sourceTree = "<group>"; };
-		3464E40A1E70A31E00AC60C9 /* DPTrackListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTrackListViewController.m; sourceTree = "<group>"; };
-		3464E40B1E70A31E00AC60C9 /* DPTrackListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DPTrackListViewController.storyboard; sourceTree = "<group>"; };
-		3464E40C1E70A31E00AC60C9 /* DPTrackListViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackListViewModel.h; sourceTree = "<group>"; };
-		3464E40D1E70A31E00AC60C9 /* DPTrackListViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTrackListViewModel.m; sourceTree = "<group>"; };
-		3464E40E1E70A31E00AC60C9 /* DPTrackListViewModelType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackListViewModelType.h; sourceTree = "<group>"; };
-		3464E4131E70A36A00AC60C9 /* DPTrackCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackCardView.h; sourceTree = "<group>"; };
-		3464E4141E70A36A00AC60C9 /* DPTrackCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTrackCardView.m; sourceTree = "<group>"; };
-		3464E4151E70A36A00AC60C9 /* DPTrackCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DPTrackCardView.xib; sourceTree = "<group>"; };
-		3464E4161E70A36A00AC60C9 /* DPTrackCardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackCardViewModel.h; sourceTree = "<group>"; };
-		3464E4171E70A36A00AC60C9 /* DPTrackCardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTrackCardViewModel.m; sourceTree = "<group>"; };
-		3464E4181E70A36A00AC60C9 /* DPTrackCardViewModelType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackCardViewModelType.h; sourceTree = "<group>"; };
 		3464E41C1E70A39A00AC60C9 /* DPTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTableViewCell.h; sourceTree = "<group>"; };
 		3464E41D1E70A39A00AC60C9 /* DPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTableViewCell.m; sourceTree = "<group>"; };
 		3464E4211E70B01500AC60C9 /* DPTrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrack.h; sourceTree = "<group>"; };
 		3464E4221E70B01500AC60C9 /* DPTrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTrack.m; sourceTree = "<group>"; };
 		3464E4241E70C1ED00AC60C9 /* DPUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUser.h; sourceTree = "<group>"; };
 		3464E4251E70C1ED00AC60C9 /* DPUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPUser.m; sourceTree = "<group>"; };
+		34A41F041E75BCCC009AA6A1 /* DPTrackJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackJSONParser.h; sourceTree = "<group>"; };
+		34A41F051E75BCCC009AA6A1 /* DPTrackJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTrackJSONParser.m; sourceTree = "<group>"; };
+		34A41F071E75D951009AA6A1 /* DPModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPModel.h; sourceTree = "<group>"; };
+		34A41F081E75D951009AA6A1 /* DPModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPModel.m; sourceTree = "<group>"; };
+		34A41F101E75E462009AA6A1 /* DPJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPJSONParser.h; sourceTree = "<group>"; };
+		34A41F111E75E462009AA6A1 /* DPJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPJSONParser.m; sourceTree = "<group>"; };
+		34A41F141E7605F5009AA6A1 /* UIView+DPNibLoadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DPNibLoadable.h"; sourceTree = "<group>"; };
+		34A41F151E760792009AA6A1 /* UIViewController+DPStoryboardLoadable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+DPStoryboardLoadable.h"; sourceTree = "<group>"; };
+		34A41F181E761E8A009AA6A1 /* DPTrack+DPDummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DPTrack+DPDummy.h"; sourceTree = "<group>"; };
+		34A41F191E761E8A009AA6A1 /* DPTrack+DPDummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DPTrack+DPDummy.m"; sourceTree = "<group>"; };
+		34A41F1B1E761ED0009AA6A1 /* DPDummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPDummy.h; sourceTree = "<group>"; };
+		34A41F1C1E76247C009AA6A1 /* NSArray+DPAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+DPAdditions.h"; sourceTree = "<group>"; };
+		34A41F1D1E76247C009AA6A1 /* NSArray+DPAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DPAdditions.m"; sourceTree = "<group>"; };
+		34B691691E70E740005A8ECD /* DPSortComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSortComponent.h; sourceTree = "<group>"; };
+		34B6916A1E70E740005A8ECD /* DPSortComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSortComponent.m; sourceTree = "<group>"; };
+		34B6916E1E70EE67005A8ECD /* DPDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPDefinitions.h; sourceTree = "<group>"; };
+		34B6916F1E70F9C7005A8ECD /* DPKVODependencyMapProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPKVODependencyMapProvider.h; sourceTree = "<group>"; };
 		638EDC92D95596ECF77552C8 /* Pods-SoundCloudSandbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloudSandbox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloudSandbox/Pods-SoundCloudSandbox.debug.xcconfig"; sourceTree = "<group>"; };
 		7D53BD4FE2E217BE62A7EFD9 /* Pods_SoundCloudSandbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoundCloudSandbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E728664F99199056F5E79186 /* Pods-SoundCloudSandbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloudSandbox.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloudSandbox/Pods-SoundCloudSandbox.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,8 +136,10 @@
 			isa = PBXGroup;
 			children = (
 				341F004A1E6F5979004D13C2 /* DPNibLoadable.h */,
+				34A41F141E7605F5009AA6A1 /* UIView+DPNibLoadable.h */,
 				341F004B1E6F5979004D13C2 /* UIView+DPNibLoadable.m */,
 				3464E3E41E7099DF00AC60C9 /* DPStoryboardLoadable.h */,
+				34A41F151E760792009AA6A1 /* UIViewController+DPStoryboardLoadable.h */,
 				341F004E1E6F5A51004D13C2 /* UIViewController+DPStoryboardLoadable.m */,
 			);
 			name = "UI Categories";
@@ -148,8 +174,8 @@
 				341F00501E6F5BEB004D13C2 /* UI Categories */,
 				3464E4271E70C28300AC60C9 /* Model */,
 				341FFFF81E6C5AE7004D13C2 /* Core */,
+				3434F2D01E71FDA2009EFBB5 /* Modules */,
 				341FFFEF1E6B8C82004D13C2 /* Common */,
-				3464E3B11E70927800AC60C9 /* Modules */,
 				341FFFBF1E6B6A5E004D13C2 /* Supporting Files */,
 			);
 			path = SoundCloudSandbox;
@@ -158,6 +184,7 @@
 		341FFFBF1E6B6A5E004D13C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				34B6916E1E70EE67005A8ECD /* DPDefinitions.h */,
 				341FFFCD1E6B6A5E004D13C2 /* LaunchScreen.storyboard */,
 				341FFFF01E6C553F004D13C2 /* DPPrefixHeader.pch */,
 				341FFFCB1E6B6A5E004D13C2 /* Assets.xcassets */,
@@ -177,6 +204,7 @@
 				341F00641E6F6DC2004D13C2 /* DPViewModelType.h */,
 				341FFFE91E6B721B004D13C2 /* DPViewModel.h */,
 				341FFFEA1E6B721B004D13C2 /* DPViewModel.m */,
+				34B6916F1E70F9C7005A8ECD /* DPKVODependencyMapProvider.h */,
 				341F00631E6F6DB5004D13C2 /* DPViewType.h */,
 				341FFFEC1E6B73CD004D13C2 /* DPView.h */,
 				341FFFED1E6B73CD004D13C2 /* DPView.m */,
@@ -187,6 +215,10 @@
 		341FFFF81E6C5AE7004D13C2 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				34B691691E70E740005A8ECD /* DPSortComponent.h */,
+				34B6916A1E70E740005A8ECD /* DPSortComponent.m */,
+				34A41F131E75FC74009AA6A1 /* Parser */,
+				3434F2EE1E7206C7009EFBB5 /* DPTrackServiceType.h */,
 				341FFFF91E6C5B08004D13C2 /* DPTrackService.h */,
 				341FFFFA1E6C5B08004D13C2 /* DPTrackService.m */,
 				341FFFF51E6C5ADB004D13C2 /* DPProfileService.h */,
@@ -195,50 +227,76 @@
 			name = Core;
 			sourceTree = "<group>";
 		};
-		3464E3B11E70927800AC60C9 /* Modules */ = {
+		3434F2D01E71FDA2009EFBB5 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				3464E4121E70A36A00AC60C9 /* TrackCard */,
-				3464E4081E70A31E00AC60C9 /* TrackList */,
+				3434F2ED1E71FE11009EFBB5 /* TrackCard */,
+				3434F2E31E71FDF9009EFBB5 /* TrackList */,
 			);
-			path = Modules;
+			name = Modules;
 			sourceTree = "<group>";
 		};
-		3464E4081E70A31E00AC60C9 /* TrackList */ = {
+		3434F2E31E71FDF9009EFBB5 /* TrackList */ = {
 			isa = PBXGroup;
 			children = (
-				3464E4091E70A31E00AC60C9 /* DPTrackListViewController.h */,
-				3464E40A1E70A31E00AC60C9 /* DPTrackListViewController.m */,
-				3464E40B1E70A31E00AC60C9 /* DPTrackListViewController.storyboard */,
-				3464E40C1E70A31E00AC60C9 /* DPTrackListViewModel.h */,
-				3464E40D1E70A31E00AC60C9 /* DPTrackListViewModel.m */,
-				3464E40E1E70A31E00AC60C9 /* DPTrackListViewModelType.h */,
+				3434F2DA1E71FDF2009EFBB5 /* DPTrackListViewController.h */,
+				3434F2DB1E71FDF2009EFBB5 /* DPTrackListViewController.m */,
+				3434F2DF1E71FDF2009EFBB5 /* DPTrackListViewModelType.h */,
+				3434F2DD1E71FDF2009EFBB5 /* DPTrackListViewModel.h */,
+				3434F2DE1E71FDF2009EFBB5 /* DPTrackListViewModel.m */,
+				3434F2DC1E71FDF2009EFBB5 /* DPTrackListViewController.storyboard */,
 			);
-			path = TrackList;
+			name = TrackList;
 			sourceTree = "<group>";
 		};
-		3464E4121E70A36A00AC60C9 /* TrackCard */ = {
+		3434F2ED1E71FE11009EFBB5 /* TrackCard */ = {
 			isa = PBXGroup;
 			children = (
-				3464E4131E70A36A00AC60C9 /* DPTrackCardView.h */,
-				3464E4141E70A36A00AC60C9 /* DPTrackCardView.m */,
-				3464E4151E70A36A00AC60C9 /* DPTrackCardView.xib */,
-				3464E4161E70A36A00AC60C9 /* DPTrackCardViewModel.h */,
-				3464E4171E70A36A00AC60C9 /* DPTrackCardViewModel.m */,
-				3464E4181E70A36A00AC60C9 /* DPTrackCardViewModelType.h */,
+				3434F2E41E71FE0C009EFBB5 /* DPTrackCardView.h */,
+				3434F2E51E71FE0C009EFBB5 /* DPTrackCardView.m */,
+				3434F2E71E71FE0C009EFBB5 /* DPTrackCardViewModel.h */,
+				3434F2E81E71FE0C009EFBB5 /* DPTrackCardViewModel.m */,
+				3434F2E91E71FE0C009EFBB5 /* DPTrackCardViewModelType.h */,
+				3434F2E61E71FE0C009EFBB5 /* DPTrackCardView.xib */,
 			);
-			path = TrackCard;
+			name = TrackCard;
 			sourceTree = "<group>";
 		};
 		3464E4271E70C28300AC60C9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				34A41F1F1E762685009AA6A1 /* Dummies */,
+				34A41F071E75D951009AA6A1 /* DPModel.h */,
+				34A41F081E75D951009AA6A1 /* DPModel.m */,
 				3464E4211E70B01500AC60C9 /* DPTrack.h */,
 				3464E4221E70B01500AC60C9 /* DPTrack.m */,
+				34A41F1C1E76247C009AA6A1 /* NSArray+DPAdditions.h */,
+				34A41F1D1E76247C009AA6A1 /* NSArray+DPAdditions.m */,
 				3464E4241E70C1ED00AC60C9 /* DPUser.h */,
 				3464E4251E70C1ED00AC60C9 /* DPUser.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		34A41F131E75FC74009AA6A1 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				34A41F101E75E462009AA6A1 /* DPJSONParser.h */,
+				34A41F111E75E462009AA6A1 /* DPJSONParser.m */,
+				34A41F041E75BCCC009AA6A1 /* DPTrackJSONParser.h */,
+				34A41F051E75BCCC009AA6A1 /* DPTrackJSONParser.m */,
+			);
+			name = Parser;
+			sourceTree = "<group>";
+		};
+		34A41F1F1E762685009AA6A1 /* Dummies */ = {
+			isa = PBXGroup;
+			children = (
+				34A41F1B1E761ED0009AA6A1 /* DPDummy.h */,
+				34A41F181E761E8A009AA6A1 /* DPTrack+DPDummy.h */,
+				34A41F191E761E8A009AA6A1 /* DPTrack+DPDummy.m */,
+			);
+			name = Dummies;
 			sourceTree = "<group>";
 		};
 		832C3D3B83889CDF7F3E994D /* Frameworks */ = {
@@ -326,9 +384,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3464E4101E70A31E00AC60C9 /* DPTrackListViewController.storyboard in Resources */,
+				3434F2E11E71FDF2009EFBB5 /* DPTrackListViewController.storyboard in Resources */,
 				341FFFCF1E6B6A5E004D13C2 /* LaunchScreen.storyboard in Resources */,
-				3464E41A1E70A36A00AC60C9 /* DPTrackCardView.xib in Resources */,
+				3434F2EB1E71FE0C009EFBB5 /* DPTrackCardView.xib in Resources */,
 				341FFFCC1E6B6A5E004D13C2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,21 +460,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				341FFFFB1E6C5B08004D13C2 /* DPTrackService.m in Sources */,
-				3464E4111E70A31E00AC60C9 /* DPTrackListViewModel.m in Sources */,
+				34A41F091E75D951009AA6A1 /* DPModel.m in Sources */,
+				3434F2E01E71FDF2009EFBB5 /* DPTrackListViewController.m in Sources */,
+				3434F2E21E71FDF2009EFBB5 /* DPTrackListViewModel.m in Sources */,
+				34A41F1A1E761E8A009AA6A1 /* DPTrack+DPDummy.m in Sources */,
 				341F004C1E6F5979004D13C2 /* UIView+DPNibLoadable.m in Sources */,
 				341FFFD81E6B6C96004D13C2 /* DPViewController.m in Sources */,
-				3464E4191E70A36A00AC60C9 /* DPTrackCardView.m in Sources */,
+				34A41F121E75E462009AA6A1 /* DPJSONParser.m in Sources */,
 				341FFFEE1E6B73CD004D13C2 /* DPView.m in Sources */,
+				34A41F061E75BCCC009AA6A1 /* DPTrackJSONParser.m in Sources */,
 				341FFFEB1E6B721B004D13C2 /* DPViewModel.m in Sources */,
+				34A41F1E1E76247C009AA6A1 /* NSArray+DPAdditions.m in Sources */,
 				341FFFC71E6B6A5E004D13C2 /* DPRootViewController.m in Sources */,
+				3434F2EA1E71FE0C009EFBB5 /* DPTrackCardView.m in Sources */,
 				341F004F1E6F5A51004D13C2 /* UIViewController+DPStoryboardLoadable.m in Sources */,
 				341FFFC41E6B6A5E004D13C2 /* DPAppDelegate.m in Sources */,
-				3464E41B1E70A36A00AC60C9 /* DPTrackCardViewModel.m in Sources */,
 				3464E41E1E70A39A00AC60C9 /* DPTableViewCell.m in Sources */,
 				3464E4261E70C1ED00AC60C9 /* DPUser.m in Sources */,
 				341FFFC11E6B6A5E004D13C2 /* main.m in Sources */,
 				3464E4231E70B01500AC60C9 /* DPTrack.m in Sources */,
-				3464E40F1E70A31E00AC60C9 /* DPTrackListViewController.m in Sources */,
+				34B6916B1E70E740005A8ECD /* DPSortComponent.m in Sources */,
+				3434F2EC1E71FE0C009EFBB5 /* DPTrackCardViewModel.m in Sources */,
 				341FFFF71E6C5ADB004D13C2 /* DPProfileService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,6 +593,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 96XFGSE75Y;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SoundCloudSandbox/DPPrefixHeader.pch;
@@ -545,6 +610,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_OBJC_IMPLICIT_ATOMIC_PROPERTIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 96XFGSE75Y;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SoundCloudSandbox/DPPrefixHeader.pch;
@@ -599,6 +665,7 @@
 				3464E42B1E70C91600AC60C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -6,12 +6,24 @@
 //  Copyright © 2017 dmpv. All rights reserved.
 //
 
-@import Foundation;
+#import "DPModel.h"
 
-@interface DPUser : NSObject
+NS_ASSUME_NONNULL_BEGIN
 
-@property (nonatomic, strong) NSString *firstName;
-@property (nonatomic, strong) NSString *lastName;
-@property (nonatomic, strong) NSURL *avatarImageURL;
+@interface DPUser : DPModel
+
+@property (nonatomic, readonly) NSUInteger ID;
+@property (nonatomic, readonly) NSString *firstName;
+@property (nonatomic, readonly) NSString *lastName;
+@property (nonatomic, readonly) NSURL *avatarImageURL;
+
+- (instancetype)initWithID:(NSUInteger)ID
+                 firstName:(NSString *)firstName
+                  lastName:(NSString *)lastName
+            avatarImageURL:(NSURL *)avatarImageURL;
+
+- (BOOL)isEqualToUser:(nullable DPUser *)user;
 
 @end
+
+NS_ASSUME_NONNULL_END

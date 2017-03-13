@@ -10,6 +10,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class RACSignal;
+
 @protocol DPTrackCardViewModelType;
 
 @protocol DPTrackListViewModelInputs <DPViewModelInputs>
@@ -19,8 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @protocol DPTrackListViewModelOutputs <DPViewModelOutputs>
+@property (nonatomic, readonly) RACSignal *tracksReloadSignal;
 @property (nonatomic, readonly) NSUInteger cardCount;
-- (id<DPTrackCardViewModelType>) viewModelForCardAtIndex: (NSUInteger) index;
+- (id<DPTrackCardViewModelType>) trackCardViewModelAtIndex: (NSUInteger) index;
 @end
 
 @protocol DPTrackListViewModelType <DPViewModelType>

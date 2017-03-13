@@ -16,4 +16,8 @@
 
 #import "Aspects.h" // https://github.com/steipete/Aspects
 
+#import "DPDefinitions.h"
+
+#import "NSArray+DPAdditions.h"
+
 #endif /* DPPrefixHeader_pch */

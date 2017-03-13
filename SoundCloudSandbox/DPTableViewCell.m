@@ -10,23 +10,15 @@
 
 #import "DPView.h"
 
+@import PureLayout;
+
 @implementation DPTableViewCell
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    // Initialization code
-}
-
 - (void)setManagedView:(DPView *)managedView {
-    NSAssert(!_managedView, @"You can set managed view only once");
+    NSAssert(!_managedView, @"Managed view can't be set twice");
     _managedView = managedView;
     [self.contentView addSubview: _managedView];
-}
-
-- (void)layoutSubviews {
-    [super layoutSubviews];
-    
-    self.managedView.frame = self.contentView.bounds;
+    [_managedView autoPinEdgesToSuperviewEdges];
 }
 
 @end

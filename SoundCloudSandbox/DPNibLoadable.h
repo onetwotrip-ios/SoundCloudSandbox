@@ -9,7 +9,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol DPNibLoadable
-@optional // protocol can be implemented in category
 + (instancetype) dp_loadFromNib: (NSString *) nibName;
 + (instancetype) dp_loadFromNib;
 @end

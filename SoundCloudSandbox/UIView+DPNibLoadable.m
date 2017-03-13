@@ -6,12 +6,7 @@
 //  Copyright © 2017 dmpv. All rights reserved.
 //
 
-@import UIKit;
-
-#import "DPNibLoadable.h"
-
-@interface UIView (NibLoadable) <DPNibLoadable>
-@end
+#import "UIView+DPNibLoadable.h"
 
 @implementation UIView (DPNibLoadable)
 
@@ -22,9 +17,11 @@
 
 + (instancetype) dp_loadFromNib: (NSString *) nibName
 {
-    return [[[NSBundle mainBundle] loadNibNamed: nibName
-                                          owner: self
-                                        options: nil] firstObject];
+    NSArray *result = [[NSBundle mainBundle] loadNibNamed: nibName
+                                                    owner: self
+                                                  options: nil];
+    NSParameterAssert(result.firstObject);
+    return result.firstObject;
 }
 
 @end

@@ -11,4 +11,13 @@
 @implementation DPView
 @synthesize viewModel = _viewModel;
 
+- (void)setViewModel:(id<DPViewModelType>)viewModel {
+    // #dev_architecture Gotta be careful here. Ensure old viewModel will deallocate immediately
+    _viewModel = viewModel;
+
+    [self observeViewModel];
+}
+
+- (void)observeViewModel {}
+
 @end

@@ -9,7 +9,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol DPStoryboardLoadable
-@optional // protocol can be implemented in category
 + (instancetype) dp_loadFromStoryboard;
 + (instancetype) dp_loadFromStoryboard: (NSString *) storyboardName;
 @end

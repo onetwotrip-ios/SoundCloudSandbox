@@ -12,10 +12,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@protocol DPTrackViewModelType;
+@protocol DPTrackCardViewModelType;
 
 @interface DPTrackCardView : DPView <DPNibLoadable>
-@property (nonatomic, strong) id<DPTrackViewModelType> viewModel;
+@property (nonatomic, strong) id<DPTrackCardViewModelType> viewModel;
 @end
 
 NS_ASSUME_NONNULL_END

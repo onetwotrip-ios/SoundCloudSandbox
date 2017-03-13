@@ -13,6 +13,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DPViewController : UIViewController <DPViewType>
+
+- (void)observeViewModel;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -17,6 +17,9 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @protocol DPTrackCardViewModelOutputs <DPViewModelOutputs>
+@property (nonatomic, readonly) NSString *authorLabelText;
+@property (nonatomic, readonly) NSString *nameLabelText;
+@property (nonatomic, readonly) NSString *durationLabelText;
 @end
 
 @protocol DPTrackCardViewModelType <DPViewModelType>

@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DPRootViewController : DPViewController
+@interface DPRootViewController : UIViewController
 @end
 
 NS_ASSUME_NONNULL_END

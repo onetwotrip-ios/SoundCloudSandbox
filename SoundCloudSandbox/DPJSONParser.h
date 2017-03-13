@@ -1,18 +1,18 @@
 //
-//  DPTrackService.h
+//  DPJSONParser.h
 //  SoundCloudSandbox
 //
-//  Created by Dmitry Purtov on 05/03/2017.
+//  Created by Dmitry Purtov on 12/03/2017.
 //  Copyright © 2017 dmpv. All rights reserved.
 //
 
 @import Foundation;
 
-#import "DPTrackServiceType.h"
-
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DPTrackService : NSObject <DPTrackServiceType>
+@interface DPJSONParser : NSObject
+
++ (NSError *)errorWithModelError:(NSError *)error;
 
 @end
 

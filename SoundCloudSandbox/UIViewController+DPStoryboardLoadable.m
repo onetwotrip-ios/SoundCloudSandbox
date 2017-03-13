@@ -6,12 +6,7 @@
 //  Copyright © 2017 dmpv. All rights reserved.
 //
 
-@import UIKit;
-
-#import "DPStoryboardLoadable.h"
-
-@interface UIViewController (StoryboardLoadable) <DPStoryboardLoadable>
-@end
+#import "UIViewController+DPStoryboardLoadable.h"
 
 @implementation UIViewController (StoryboardLoadable)
 

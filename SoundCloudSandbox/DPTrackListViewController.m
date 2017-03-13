@@ -9,13 +9,14 @@
 #import "DPTrackListViewController.h"
 #import "DPTrackListViewModelType.h"
 
-@import ReactiveObjC;
-
-#import "DPTableViewCell.h"
-
 #import "DPTrackCardView.h"
 #import "DPTrackCardViewModelType.h"
 
+#import "DPTableViewCell.h"
+
+#import "UIViewController+DPStoryboardLoadable.h"
+
+@import ReactiveObjC;
 
 //--------------------------------------------------------------------------------------------------
 #pragma mark - DPTrackListViewController Internal Interface
@@ -32,7 +33,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_ASSUME_NONNULL_END
 
-
 //..................................................................................................
 #pragma mark - DPTrackListViewController Implementation
 
@@ -40,13 +40,28 @@ NS_ASSUME_NONNULL_END
 @dynamic viewModel;
 
 //..................................................................................................
-#pragma mark - Public Methods
-
-//..................................................................................................
 #pragma mark - Overrides
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    const CGFloat kEstimatedRowHeight = 44.0;
+    self.tableView.estimatedRowHeight = kEstimatedRowHeight;
+    self.tableView.allowsSelection = NO;
+    
+    [UIView new];
+    self.tableView.tableHeaderView =
+}
+
+- (void)observeViewModel {
+    [self.viewModel.outputs.tracksReloadSignal subscribeNext:^(id _) {
+        [self.tableView reloadData];
+    }];
+}
+
 //..................................................................................................
-#pragma mark - Internal Methods
+#pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.viewModel.outputs.cardCount;
@@ -59,7 +74,7 @@ NS_ASSUME_NONNULL_END
     {
         cell.managedView = [DPTrackCardView dp_loadFromNib];
     }
-    cell.managedView.viewModel = [self.viewModel.outputs viewModelForCardAtIndex: indexPath.row];
+    cell.managedView.viewModel = [self.viewModel.outputs trackCardViewModelAtIndex: indexPath.row];
     return cell;
 }
 

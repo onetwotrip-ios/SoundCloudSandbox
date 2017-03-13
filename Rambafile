@@ -11,10 +11,10 @@ prefix: DP
 project_target: SoundCloudSandbox
 
 # The file path for new modules
-project_file_path: SoundCloudSandbox/Modules/
+project_file_path: SoundCloudSandbox/
 
 # The Xcode group path to new modules
-project_group_path: SoundCloudSandbox/Modules/
+project_group_path: SoundCloudSandbox/
 
 ### Dependencies settings section
 podfile_path: Podfile

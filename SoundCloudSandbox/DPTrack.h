@@ -6,11 +6,25 @@
 //  Copyright © 2017 dmpv. All rights reserved.
 //
 
-@import Foundation;
+#import "DPModel.h"
 
-@interface DPTrack : NSObject
+NS_ASSUME_NONNULL_BEGIN
+
+@interface DPTrack : DPModel
+@property (nonatomic, readonly) NSUInteger ID;
 @property (nonatomic, readonly) NSString *author;
 @property (nonatomic, readonly) NSString *name;
 @property (nonatomic, readonly) NSTimeInterval duration;
 
+- (instancetype) initWithID: (NSUInteger) ID
+                     author: (NSString *) author
+                       name: (NSString *) name
+                   duration: (NSTimeInterval) duration NS_DESIGNATED_INITIALIZER;
+
+- (instancetype) init NS_UNAVAILABLE;
+
+- (BOOL) isEqualToTrack:(DPTrack *)track;
+
 @end
+
+NS_ASSUME_NONNULL_END

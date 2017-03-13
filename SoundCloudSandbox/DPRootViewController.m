@@ -10,9 +10,4 @@
 
 @implementation DPRootViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-}
-
-
 @end

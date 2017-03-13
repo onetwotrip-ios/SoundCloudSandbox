@@ -11,7 +11,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class DPTrack;
+
 @interface DPTrackCardViewModel : DPViewModel <DPTrackCardViewModelType>
+@property (nonatomic, strong) DPTrack *track;
 @end
 
 NS_ASSUME_NONNULL_END

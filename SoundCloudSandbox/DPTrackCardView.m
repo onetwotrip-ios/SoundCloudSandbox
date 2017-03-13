@@ -9,8 +9,9 @@
 #import "DPTrackCardView.h"
 #import "DPTrackCardViewModelType.h"
 
-@import ReactiveObjC;
+#import "UIView+DPNibLoadable.h"
 
+@import ReactiveObjC;
 
 //--------------------------------------------------------------------------------------------------
 #pragma mark - DPTrackCardView Internal Interface
@@ -25,7 +26,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 NS_ASSUME_NONNULL_END
 
-
 //..................................................................................................
 #pragma mark - DPTrackCardView Implementation
 
@@ -33,12 +33,15 @@ NS_ASSUME_NONNULL_END
 @dynamic viewModel;
 
 //..................................................................................................
-#pragma mark - Public Methods
-
-//..................................................................................................
 #pragma mark - Overrides
 
-//..................................................................................................
-#pragma mark - Internal Methods
+- (void)observeViewModel {
+    // #dev_architecture Ensure inputs are changing in a batch
+    [RACObserve(self.viewModel, outputs) subscribeNext:^(id<DPTrackCardViewModelOutputs> outputs) {
+        self.authorLabel.text = outputs.authorLabelText;
+        self.nameLabel.text = outputs.nameLabelText;
+        self.durationLabel.text = outputs.durationLabelText;
+    }];
+}
 
 @end

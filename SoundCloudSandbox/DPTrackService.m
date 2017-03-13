@@ -8,6 +8,12 @@
 
 #import "DPTrackService.h"
 
+#import "DPTrack.h"
+
 @implementation DPTrackService
+
+- (RACSignal<DPTrackSet> *) tracksWithIDs: (NSIndexSet *) IDs {
+    return nil;
+}
 
 @end
