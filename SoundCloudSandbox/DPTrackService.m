@@ -46,7 +46,8 @@
         }];
     }] setNameWithFormat:@"favoriteTracksForUserWithID:"];
     
-    return [signal replayLazily];
+    // #dev_RAC Implement multicasting.
+    return signal;
 }
 
 @end

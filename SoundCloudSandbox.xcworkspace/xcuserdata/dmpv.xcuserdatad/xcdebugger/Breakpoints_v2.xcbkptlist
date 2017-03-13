@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SoundCloudSandbox/DPUserProfileViewModel.m"
-            timestampString = "511138296.895413"
+            timestampString = "511138476.635584"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "-reload"
             landmarkType = "7">
          </BreakpointContent>

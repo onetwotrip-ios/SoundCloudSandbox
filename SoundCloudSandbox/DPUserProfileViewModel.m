@@ -37,9 +37,10 @@ NS_ASSUME_NONNULL_END
     NSUInteger userID = arc4random_uniform(kUpperBound - kLowerBound) + kLowerBound;
     
     @weakify(self);
-    [[RACSignal
+    [[[RACSignal
         zip:@[[self.trackService favoriteTracksForUserWithID:userID],
               [self.userService userWithID:userID]]]
+        deliverOnMainThread]
         subscribeNext:^(RACTuple *tuple) {
             @strongify(self);
             DPTrackSet tracks = tuple.first;
