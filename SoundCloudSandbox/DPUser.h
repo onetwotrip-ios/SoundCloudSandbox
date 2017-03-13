@@ -13,13 +13,13 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DPUser : DPModel
 
 @property (nonatomic, readonly) NSUInteger ID;
-@property (nonatomic, readonly) NSString *firstName;
-@property (nonatomic, readonly) NSString *lastName;
+@property (nonatomic, readonly, nullable) NSString *fullName;
+@property (nonatomic, readonly) NSString *nickName;
 @property (nonatomic, readonly) NSURL *avatarImageURL;
 
 - (instancetype)initWithID:(NSUInteger)ID
-                 firstName:(NSString *)firstName
-                  lastName:(NSString *)lastName
+                  fullName:(nullable NSString *)fullName
+                  nickName:(NSString *)nickName
             avatarImageURL:(NSURL *)avatarImageURL;
 
 - (BOOL)isEqualToUser:(nullable DPUser *)user;

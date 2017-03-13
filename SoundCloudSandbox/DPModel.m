@@ -8,10 +8,6 @@
 
 #import "DPModel.h"
 
-typedef NS_ENUM(NSInteger, DPModelError) {
-    DPModelErrorNonnullKeyIsNil = 0
-};
-
 @implementation DPModel
 
 //..................................................................................................
@@ -39,6 +35,10 @@ typedef NS_ENUM(NSInteger, DPModelError) {
 
 //..................................................................................................
 #pragma mark - Errors
+
+typedef NS_ENUM(NSInteger, DPModelError) {
+    DPModelErrorNonnullKeyIsNil = 0
+};
 
 + (NSString *)errorDomain {
     return NSStringFromClass(self);

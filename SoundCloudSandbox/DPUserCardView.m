@@ -11,6 +11,7 @@
 
 #import "UIView+DPNibLoadable.h"
 
+#import <SDWebImage/UIImageView+WebCache.h>
 @import ReactiveObjC;
 
 
@@ -19,6 +20,7 @@
 
 @interface DPUserCardView ()
 @property (nonatomic, strong) IBOutlet UILabel *fullNameLabel;
+@property (nonatomic, strong) IBOutlet UILabel *nickNameLabel;
 @property (nonatomic, strong) IBOutlet UIImageView *avatarImageView;
 @end
 
@@ -28,19 +30,24 @@
 @implementation DPUserCardView
 @dynamic viewModel;
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-    
-}
-
 //..................................................................................................
 #pragma mark - Overrides
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    CALayer *avatarLayer = self.avatarImageView.layer;
+    avatarLayer.cornerRadius = avatarLayer.bounds.size.height * 0.3;
+    avatarLayer.masksToBounds = YES;
+}
+
 - (void)observeViewModel {
-    // #dev_architecture Ensure inputs are changing in a batch
-    [RACObserve(self.viewModel, outputs) subscribeNext:^(id<DPUserCardViewModelOutputs> outputs) {
-        self.fullNameLabel.text = outputs.fullNameLabelText;
-//        self.avatarImageView.image = outputs.nameLabelText;
+    @weakify(self);
+    RAC(self.fullNameLabel,text) = RACObserve(self.viewModel.outputs, fullNameLabelText);
+    RAC(self.nickNameLabel,text) = RACObserve(self.viewModel.outputs, nickNameLabelText);
+    [RACObserve(self.viewModel.outputs, avatarImageURL) subscribeNext:^(id _Nullable url) {
+        @strongify(self);
+        [self.avatarImageView sd_setImageWithURL:url];
     }];
 }
 

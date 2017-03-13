@@ -11,7 +11,7 @@ components.scheme = "https"
 components.host = "api.soundcloud.com"
 components.queryItems = [URLQueryItem(name: "client_id", value: client_id)]
 
-components.path = "/users"
+components.path = "/users/\(3732)"
 let profileURL = components.url!
 
 components.path = "/tracks"
@@ -30,16 +30,16 @@ var task = session.dataTask(with: profileURL) { (data, response, _) in
 
 task.resume()
 
-task = session.dataTask(with: tracksURL) { (data, response, _) in
-    guard let data = data else {
-        return
-    }
-    let json = try! JSONSerialization.jsonObject(with: data)
-    
-    print(json)
-}
+//task = session.dataTask(with: tracksURL) { (data, response, _) in
+//    guard let data = data else {
+//        return
+//    }
+//    let json = try! JSONSerialization.jsonObject(with: data)
+//    
+//    print(json)
+//}
 
-task.resume()
+//task.resume()
 
 
 

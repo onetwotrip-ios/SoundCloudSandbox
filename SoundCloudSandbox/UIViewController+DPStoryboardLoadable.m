@@ -10,15 +10,13 @@
 
 @implementation UIViewController (StoryboardLoadable)
 
-+ (instancetype) dp_loadFromStoryboard
-{
-    return [self dp_loadFromStoryboard: NSStringFromClass(self.class)];
++ (instancetype)dp_loadFromStoryboard {
+    return [self dp_loadFromStoryboard:NSStringFromClass(self.class)];
 }
 
-+ (instancetype) dp_loadFromStoryboard: (NSString *) storyboardName
-{
-    UIStoryboard *sb = [UIStoryboard storyboardWithName: storyboardName bundle: [NSBundle mainBundle]];
-    return [sb instantiateViewControllerWithIdentifier: NSStringFromClass(self.class)];
++ (instancetype)dp_loadFromStoryboard:(NSString *)storyboardName {
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:storyboardName bundle:[NSBundle mainBundle]];
+    return [sb instantiateViewControllerWithIdentifier:NSStringFromClass(self.class)];
 }
 
 @end

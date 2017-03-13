@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User Profile View Controller-->
+        <scene sceneID="lPz-QU-UpQ">
+            <objects>
+                <viewController storyboardIdentifier="DPUserProfileViewController" id="CYU-ge-Wc4" customClass="DPUserProfileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hvy-2a-2H6"/>
+                        <viewControllerLayoutGuide type="bottom" id="SYn-Uf-1E7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dkz-Xh-tVQ" customClass="DPView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mfE-ej-lhr">
+                                <rect key="frame" x="329" y="28" width="30" height="30"/>
+                                <state key="normal" image="refresh_icon"/>
+                                <connections>
+                                    <action selector="refreshButtonTouched:" destination="CYU-ge-Wc4" eventType="touchUpInside" id="9mq-AN-SjK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.095462328767123295" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="mfE-ej-lhr" firstAttribute="top" secondItem="hvy-2a-2H6" secondAttribute="bottom" constant="8" id="1Qa-H4-TA4"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mfE-ej-lhr" secondAttribute="trailing" id="t90-Ao-Cxy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="refreshButton" destination="mfE-ej-lhr" id="OJo-Or-NVM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eNi-zw-MdX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-588" y="-297.30134932533736"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="refresh_icon" width="30" height="30"/>
+    </resources>
+</document>

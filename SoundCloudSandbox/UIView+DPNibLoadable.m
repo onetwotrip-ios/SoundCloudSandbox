@@ -10,16 +10,14 @@
 
 @implementation UIView (DPNibLoadable)
 
-+ (instancetype) dp_loadFromNib
-{
-    return [self dp_loadFromNib: NSStringFromClass(self.class)];
++ (instancetype)dp_loadFromNib {
+    return [self dp_loadFromNib:NSStringFromClass(self.class)];
 }
 
-+ (instancetype) dp_loadFromNib: (NSString *) nibName
-{
-    NSArray *result = [[NSBundle mainBundle] loadNibNamed: nibName
-                                                    owner: self
-                                                  options: nil];
++ (instancetype)dp_loadFromNib:(NSString *)nibName {
+    NSArray *result = [[NSBundle mainBundle] loadNibNamed:nibName
+                                                    owner:self
+                                                  options:nil];
     NSParameterAssert(result.firstObject);
     return result.firstObject;
 }

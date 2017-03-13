@@ -14,13 +14,13 @@
 #pragma mark - Inits
 
 - (instancetype)initWithID:(NSUInteger)ID
-                 firstName:(NSString *)firstName
-                  lastName:(NSString *)lastName
+                  fullName:(NSString *)fullName
+                  nickName:(NSString *)nickName
             avatarImageURL:(NSURL *)avatarImageURL {
     if (self = [super init]) {
         _ID = ID;
-        _firstName = firstName.copy;
-        _lastName = lastName.copy;
+        _fullName = fullName.copy;
+        _nickName = nickName.copy;
         _avatarImageURL = avatarImageURL;
     }
     return self;
@@ -36,8 +36,7 @@
         DPUser *inst;
         nonnullKeys = [NSSet setWithObjects:
                        @keypath(inst.ID),
-                       @keypath(inst.firstName),
-                       @keypath(inst.lastName),
+                       @keypath(inst.nickName),
                        @keypath(inst.avatarImageURL), nil];
     });
     return nonnullKeys;
@@ -60,12 +59,12 @@
     if (!user) {
         return NO;
     }
-    return [self.firstName isEqualToString:user.firstName] &&
-           [self.lastName isEqualToString:user.lastName] &&
+    return [self.fullName  isEqualToString:user.fullName] &&
+           [self.nickName  isEqualToString:user.nickName] &&
            [self.avatarImageURL.absoluteString isEqualToString:user.avatarImageURL.absoluteString];
 }
 - (NSUInteger)hash {
-    return self.firstName.hash ^ self.firstName.hash ^ self.avatarImageURL.hash;
+    return self.fullName.hash ^ self.nickName.hash ^ self.avatarImageURL.hash;
 }
 
 @end

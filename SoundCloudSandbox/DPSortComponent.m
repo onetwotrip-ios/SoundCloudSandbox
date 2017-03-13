@@ -9,7 +9,7 @@
 #import "DPSortComponent.h"
 
 typedef id ObjectType;         // Differ regular id's from types we expect to be ObjectType. Syntactic sugar.
-typedef NSArray *CallCacheKey; // Structure: @[(NSSet<ObjectType> *)part0, (NSArray<NSSortDescriptor *)part1]
+typedef NSArray *CallCacheKey; // Structure:@[(NSSet<ObjectType> *)part0, (NSArray<NSSortDescriptor *)part1]
 
 @interface DPSortComponent ()
 @property (nonatomic, strong) NSCache<CallCacheKey, NSArray<ObjectType> *> *callCache;

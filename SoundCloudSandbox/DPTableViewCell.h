@@ -8,9 +8,9 @@
 
 @import UIKit;
 
-@class DPView;
-
 NS_ASSUME_NONNULL_BEGIN
+
+@class DPView;
 
 @interface DPTableViewCell : UITableViewCell
 @property (nonatomic, strong) DPView *managedView;

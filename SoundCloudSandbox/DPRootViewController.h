@@ -8,10 +8,14 @@
 
 #import "DPViewController.h"
 
+@class DPAppRouter;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DPRootViewController : UIViewController
+
+@property (nonatomic, strong) DPAppRouter *router;
+
 @end
 
 NS_ASSUME_NONNULL_END
-

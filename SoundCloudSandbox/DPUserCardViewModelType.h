@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol DPUserCardViewModelOutputs <DPViewModelOutputs>
 @property (nonatomic, readonly) NSString *fullNameLabelText;
+@property (nonatomic, readonly) NSString *nickNameLabelText;
 @property (nonatomic, readonly) NSURL *avatarImageURL;
 @end
 

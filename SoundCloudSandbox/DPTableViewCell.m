@@ -17,7 +17,7 @@
 - (void)setManagedView:(DPView *)managedView {
     NSAssert(!_managedView, @"Managed view can't be set twice");
     _managedView = managedView;
-    [self.contentView addSubview: _managedView];
+    [self.contentView addSubview:_managedView];
     [_managedView autoPinEdgesToSuperviewEdges];
 }
 

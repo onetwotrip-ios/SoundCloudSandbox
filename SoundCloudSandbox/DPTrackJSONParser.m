@@ -10,15 +10,18 @@
 
 #import "DPTrack.h"
 
+#import "DPUser.h"
+#import "DPUserJSONParser.h"
+
 @interface DPMutableTrack : DPTrack
 @property (nonatomic) NSUInteger ID;
-@property (nonatomic, copy) NSString *author;
+@property (nonatomic, copy) DPUser *author;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic) NSTimeInterval duration;
 @end
 
 @implementation DPMutableTrack
-@dynamic ID, author, name, duration;
+@synthesize ID, author, name, duration;
 
 - (DPTrack *)copyWithZone:(NSZone *)zone {
     return [[DPTrack alloc] initWithID:self.ID
@@ -29,7 +32,18 @@
 
 @end
 
+@interface DPTrackJSONParser ()
+@property (nonatomic, strong) DPUserJSONParser *userParser;
+@end
+
 @implementation DPTrackJSONParser
+
+- (instancetype) init {
+    if (self = [super init]) {
+        _userParser = [DPUserJSONParser new];
+    }
+    return self;
+}
 
 - (DPTrack *)trackFromJson:(NSDictionary *)json error:(NSError **)error {
     DPMutableTrack *mTrack = [DPMutableTrack new];
@@ -37,29 +51,46 @@
 
     mTrack.ID = DP_CAST(json[@"ID"], NSNumber).unsignedIntegerValue;
     if (![mTrack validateKey:@keypath(mTrack.ID) error:&localError]) {
-        *error = [self.class errorWithModelError:localError];
+        *error = [self.class errorWithUnderlyingError:localError];
         return nil;
     }
 
-    mTrack.author = DP_CAST(json[@"author"], NSString);
+    NSDictionary *userJSON = DP_CAST(json[@"user"], NSDictionary);
+    if (userJSON) {
+        mTrack.author = [self.userParser userFromJson:userJSON error:&localError];
+    }
     if (![mTrack validateKey:@keypath(mTrack.author) error:&localError]) {
-        *error = [self.class errorWithModelError:localError];
+        *error = [self.class errorWithUnderlyingError:localError];
         return nil;
     }
 
-    mTrack.name = DP_CAST(json[@"name"], NSString);
+    mTrack.name = DP_CAST(json[@"title"], NSString);
     if (![mTrack validateKey:@keypath(mTrack.name) error:&localError]) {
-        *error = [self.class errorWithModelError:localError];
+        *error = [self.class errorWithUnderlyingError:localError];
         return nil;
     }
 
-    mTrack.duration = DP_CAST(json[@"name"], NSNumber).doubleValue;
+    mTrack.duration = DP_CAST(json[@"duration"], NSNumber).doubleValue;
     if (![mTrack validateKey:@keypath(mTrack.duration) error:&localError]) {
-        *error = [self.class errorWithModelError:localError];
+        *error = [self.class errorWithUnderlyingError:localError];
         return nil;
     }
 
     return [mTrack copy];
+}
+
+- (nullable NSSet<DPTrack *> *)tracksFromJsonArray:(NSArray<NSDictionary *> *)jsonArray error:(NSError **)error {
+    NSMutableSet<DPTrack *> *result = [NSMutableSet new];
+    NSError *localError;
+    for (NSDictionary *json in jsonArray) {
+        DPTrack *track = [self trackFromJson:json error:&localError];
+        if (localError) {
+            *error = [self.class errorWithUnderlyingError:localError];
+            return nil;
+        }
+        [result addObject:track];
+    }
+    return [result mutableCopy];
 }
 
 @end

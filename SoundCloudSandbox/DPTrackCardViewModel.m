@@ -11,6 +11,7 @@
 @import ReactiveObjC;
 
 #import "DPTrack.h"
+#import "DPUser.h"
 
 //--------------------------------------------------------------------------------------------------
 #pragma mark - DPTrackCardViewModel Implementation
@@ -37,7 +38,7 @@ NS_ASSUME_NONNULL_END
         return;
     }
     _track = track;
-    self.authorLabelText   = _track.author;
+    self.authorLabelText   = _track.author.nickName;
     self.nameLabelText     = _track.name;
     self.durationLabelText = [self formattedDuration:_track.duration];
 }

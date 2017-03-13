@@ -31,7 +31,7 @@
 		341FFFD81E6B6C96004D13C2 /* DPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFD71E6B6C96004D13C2 /* DPViewController.m */; };
 		341FFFEB1E6B721B004D13C2 /* DPViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFEA1E6B721B004D13C2 /* DPViewModel.m */; };
 		341FFFEE1E6B73CD004D13C2 /* DPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFED1E6B73CD004D13C2 /* DPView.m */; };
-		341FFFF71E6C5ADB004D13C2 /* DPProfileService.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFF61E6C5ADB004D13C2 /* DPProfileService.m */; };
+		341FFFF71E6C5ADB004D13C2 /* DPUserService.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFF61E6C5ADB004D13C2 /* DPUserService.m */; };
 		341FFFFB1E6C5B08004D13C2 /* DPTrackService.m in Sources */ = {isa = PBXBuildFile; fileRef = 341FFFFA1E6C5B08004D13C2 /* DPTrackService.m */; };
 		3434F2E01E71FDF2009EFBB5 /* DPTrackListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3434F2DB1E71FDF2009EFBB5 /* DPTrackListViewController.m */; };
 		3434F2E11E71FDF2009EFBB5 /* DPTrackListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3434F2DC1E71FDF2009EFBB5 /* DPTrackListViewController.storyboard */; };
@@ -50,6 +50,16 @@
 		34A41F311E766247009AA6A1 /* DPUserCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A41F2C1E766247009AA6A1 /* DPUserCardView.m */; };
 		34A41F321E766247009AA6A1 /* DPUserCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 34A41F2D1E766247009AA6A1 /* DPUserCardView.xib */; };
 		34A41F351E76629E009AA6A1 /* DPUserCardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A41F2F1E766247009AA6A1 /* DPUserCardViewModel.m */; };
+		34A41F3C1E7673DD009AA6A1 /* DPAppRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A41F3B1E7673DD009AA6A1 /* DPAppRouter.m */; };
+		34A41F711E7691DB009AA6A1 /* DPServiceContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A41F701E7691DB009AA6A1 /* DPServiceContainer.m */; };
+		34A41F741E7694B0009AA6A1 /* DPTrackHTTPTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A41F731E7694B0009AA6A1 /* DPTrackHTTPTransport.m */; };
+		34A41F771E7694CC009AA6A1 /* DPUserHTTPTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A41F761E7694CC009AA6A1 /* DPUserHTTPTransport.m */; };
+		34A41F7B1E769520009AA6A1 /* DPHTTPTransport.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A41F7A1E769520009AA6A1 /* DPHTTPTransport.m */; };
+		34A41F7E1E769687009AA6A1 /* DPUserJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A41F7D1E769687009AA6A1 /* DPUserJSONParser.m */; };
+		34A41F8D1E76D99E009AA6A1 /* DPUser+DPDummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A41F8C1E76D99E009AA6A1 /* DPUser+DPDummy.m */; };
+		34A41F951E76DF41009AA6A1 /* DPUserProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A41F901E76DF41009AA6A1 /* DPUserProfileViewController.m */; };
+		34A41F961E76DF41009AA6A1 /* DPUserProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34A41F911E76DF41009AA6A1 /* DPUserProfileViewController.storyboard */; };
+		34A41F971E76DF41009AA6A1 /* DPUserProfileViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 34A41F931E76DF41009AA6A1 /* DPUserProfileViewModel.m */; };
 		34B6916B1E70E740005A8ECD /* DPSortComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 34B6916A1E70E740005A8ECD /* DPSortComponent.m */; };
 		74288C6010FD5F7DB5044A87 /* Pods_SoundCloudSandbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D53BD4FE2E217BE62A7EFD9 /* Pods_SoundCloudSandbox.framework */; };
 /* End PBXBuildFile section */
@@ -77,8 +87,8 @@
 		341FFFEC1E6B73CD004D13C2 /* DPView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPView.h; sourceTree = "<group>"; };
 		341FFFED1E6B73CD004D13C2 /* DPView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPView.m; sourceTree = "<group>"; };
 		341FFFF01E6C553F004D13C2 /* DPPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPPrefixHeader.pch; sourceTree = "<group>"; };
-		341FFFF51E6C5ADB004D13C2 /* DPProfileService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPProfileService.h; sourceTree = "<group>"; };
-		341FFFF61E6C5ADB004D13C2 /* DPProfileService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPProfileService.m; sourceTree = "<group>"; };
+		341FFFF51E6C5ADB004D13C2 /* DPUserService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUserService.h; sourceTree = "<group>"; };
+		341FFFF61E6C5ADB004D13C2 /* DPUserService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPUserService.m; sourceTree = "<group>"; };
 		341FFFF91E6C5B08004D13C2 /* DPTrackService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackService.h; sourceTree = "<group>"; };
 		341FFFFA1E6C5B08004D13C2 /* DPTrackService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTrackService.m; sourceTree = "<group>"; };
 		3434F2DA1E71FDF2009EFBB5 /* DPTrackListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackListViewController.h; sourceTree = "<group>"; };
@@ -120,6 +130,27 @@
 		34A41F2E1E766247009AA6A1 /* DPUserCardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUserCardViewModel.h; sourceTree = "<group>"; };
 		34A41F2F1E766247009AA6A1 /* DPUserCardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPUserCardViewModel.m; sourceTree = "<group>"; };
 		34A41F301E766247009AA6A1 /* DPUserCardViewModelType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUserCardViewModelType.h; sourceTree = "<group>"; };
+		34A41F3A1E7673DD009AA6A1 /* DPAppRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPAppRouter.h; sourceTree = "<group>"; };
+		34A41F3B1E7673DD009AA6A1 /* DPAppRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPAppRouter.m; sourceTree = "<group>"; };
+		34A41F3D1E767862009AA6A1 /* DPUserServiceType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUserServiceType.h; sourceTree = "<group>"; };
+		34A41F6F1E7691DB009AA6A1 /* DPServiceContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPServiceContainer.h; sourceTree = "<group>"; };
+		34A41F701E7691DB009AA6A1 /* DPServiceContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPServiceContainer.m; sourceTree = "<group>"; };
+		34A41F721E7694B0009AA6A1 /* DPTrackHTTPTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPTrackHTTPTransport.h; sourceTree = "<group>"; };
+		34A41F731E7694B0009AA6A1 /* DPTrackHTTPTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPTrackHTTPTransport.m; sourceTree = "<group>"; };
+		34A41F751E7694CC009AA6A1 /* DPUserHTTPTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUserHTTPTransport.h; sourceTree = "<group>"; };
+		34A41F761E7694CC009AA6A1 /* DPUserHTTPTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPUserHTTPTransport.m; sourceTree = "<group>"; };
+		34A41F791E769520009AA6A1 /* DPHTTPTransport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPHTTPTransport.h; sourceTree = "<group>"; };
+		34A41F7A1E769520009AA6A1 /* DPHTTPTransport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = DPHTTPTransport.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		34A41F7C1E769687009AA6A1 /* DPUserJSONParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUserJSONParser.h; sourceTree = "<group>"; };
+		34A41F7D1E769687009AA6A1 /* DPUserJSONParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPUserJSONParser.m; sourceTree = "<group>"; };
+		34A41F8B1E76D99E009AA6A1 /* DPUser+DPDummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DPUser+DPDummy.h"; sourceTree = "<group>"; };
+		34A41F8C1E76D99E009AA6A1 /* DPUser+DPDummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DPUser+DPDummy.m"; sourceTree = "<group>"; };
+		34A41F8F1E76DF41009AA6A1 /* DPUserProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUserProfileViewController.h; sourceTree = "<group>"; };
+		34A41F901E76DF41009AA6A1 /* DPUserProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPUserProfileViewController.m; sourceTree = "<group>"; };
+		34A41F911E76DF41009AA6A1 /* DPUserProfileViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DPUserProfileViewController.storyboard; sourceTree = "<group>"; };
+		34A41F921E76DF41009AA6A1 /* DPUserProfileViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUserProfileViewModel.h; sourceTree = "<group>"; };
+		34A41F931E76DF41009AA6A1 /* DPUserProfileViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPUserProfileViewModel.m; sourceTree = "<group>"; };
+		34A41F941E76DF41009AA6A1 /* DPUserProfileViewModelType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPUserProfileViewModelType.h; sourceTree = "<group>"; };
 		34B691691E70E740005A8ECD /* DPSortComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPSortComponent.h; sourceTree = "<group>"; };
 		34B6916A1E70E740005A8ECD /* DPSortComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPSortComponent.m; sourceTree = "<group>"; };
 		34B6916E1E70EE67005A8ECD /* DPDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPDefinitions.h; sourceTree = "<group>"; };
@@ -129,6 +160,9 @@
 		638EDC92D95596ECF77552C8 /* Pods-SoundCloudSandbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloudSandbox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloudSandbox/Pods-SoundCloudSandbox.debug.xcconfig"; sourceTree = "<group>"; };
 		7B821226947EFE7DFF95B9A5 /* DPUserCardViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DPUserCardViewModel.h; sourceTree = "<group>"; };
 		7D53BD4FE2E217BE62A7EFD9 /* Pods_SoundCloudSandbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SoundCloudSandbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85F96B6593474E8A14C9DBD1 /* DPUserProfileViewModelType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DPUserProfileViewModelType.h; sourceTree = "<group>"; };
+		9418AB1D3FBC30D11AE97E47 /* DPUserProfileViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = DPUserProfileViewModel.h; sourceTree = "<group>"; };
+		AF580FA5F556DA35BEB616EC /* DPUserProfileViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = DPUserProfileViewModel.m; sourceTree = "<group>"; };
 		E728664F99199056F5E79186 /* Pods-SoundCloudSandbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SoundCloudSandbox.release.xcconfig"; path = "Pods/Target Support Files/Pods-SoundCloudSandbox/Pods-SoundCloudSandbox.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,17 +178,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		341F00501E6F5BEB004D13C2 /* UI Categories */ = {
+		341F00501E6F5BEB004D13C2 /* Protocols And Categories (UI) */ = {
 			isa = PBXGroup;
 			children = (
 				341F004A1E6F5979004D13C2 /* DPNibLoadable.h */,
+				3464E3E41E7099DF00AC60C9 /* DPStoryboardLoadable.h */,
 				34A41F141E7605F5009AA6A1 /* UIView+DPNibLoadable.h */,
 				341F004B1E6F5979004D13C2 /* UIView+DPNibLoadable.m */,
-				3464E3E41E7099DF00AC60C9 /* DPStoryboardLoadable.h */,
 				34A41F151E760792009AA6A1 /* UIViewController+DPStoryboardLoadable.h */,
 				341F004E1E6F5A51004D13C2 /* UIViewController+DPStoryboardLoadable.m */,
 			);
-			name = "UI Categories";
+			name = "Protocols And Categories (UI)";
 			sourceTree = "<group>";
 		};
 		341FFFB31E6B6A5E004D13C2 = {
@@ -178,18 +212,19 @@
 		341FFFBE1E6B6A5E004D13C2 /* SoundCloudSandbox */ = {
 			isa = PBXGroup;
 			children = (
-				341F002F1E6E0630004D13C2 /* APIPlayground.playground */,
 				341FFFC21E6B6A5E004D13C2 /* DPAppDelegate.h */,
 				341FFFC31E6B6A5E004D13C2 /* DPAppDelegate.m */,
-				3464E41C1E70A39A00AC60C9 /* DPTableViewCell.h */,
-				3464E41D1E70A39A00AC60C9 /* DPTableViewCell.m */,
-				341F00501E6F5BEB004D13C2 /* UI Categories */,
+				34A41F3A1E7673DD009AA6A1 /* DPAppRouter.h */,
+				34A41F3B1E7673DD009AA6A1 /* DPAppRouter.m */,
+				341FFFC51E6B6A5E004D13C2 /* DPRootViewController.h */,
+				341FFFC61E6B6A5E004D13C2 /* DPRootViewController.m */,
+				34A41F391E766ADE009AA6A1 /* Utils */,
 				3464E4271E70C28300AC60C9 /* Model */,
 				341FFFF81E6C5AE7004D13C2 /* Core */,
 				3434F2D01E71FDA2009EFBB5 /* Modules */,
-				341FFFEF1E6B8C82004D13C2 /* Common */,
 				341FFFBF1E6B6A5E004D13C2 /* Supporting Files */,
 				E201A66CCDAD3B7F120411F8 /* UserCard */,
+				40B4B65C6E91220997E249B4 /* UserProfile */,
 			);
 			path = SoundCloudSandbox;
 			sourceTree = "<group>";
@@ -207,35 +242,12 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		341FFFEF1E6B8C82004D13C2 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				341FFFC51E6B6A5E004D13C2 /* DPRootViewController.h */,
-				341FFFC61E6B6A5E004D13C2 /* DPRootViewController.m */,
-				341FFFD61E6B6C96004D13C2 /* DPViewController.h */,
-				341FFFD71E6B6C96004D13C2 /* DPViewController.m */,
-				341F00641E6F6DC2004D13C2 /* DPViewModelType.h */,
-				341FFFE91E6B721B004D13C2 /* DPViewModel.h */,
-				341FFFEA1E6B721B004D13C2 /* DPViewModel.m */,
-				34B6916F1E70F9C7005A8ECD /* DPKVODependencyMapProvider.h */,
-				341F00631E6F6DB5004D13C2 /* DPViewType.h */,
-				341FFFEC1E6B73CD004D13C2 /* DPView.h */,
-				341FFFED1E6B73CD004D13C2 /* DPView.m */,
-			);
-			name = Common;
-			sourceTree = "<group>";
-		};
 		341FFFF81E6C5AE7004D13C2 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				34B691691E70E740005A8ECD /* DPSortComponent.h */,
-				34B6916A1E70E740005A8ECD /* DPSortComponent.m */,
-				34A41F131E75FC74009AA6A1 /* Parser */,
-				3434F2EE1E7206C7009EFBB5 /* DPTrackServiceType.h */,
-				341FFFF91E6C5B08004D13C2 /* DPTrackService.h */,
-				341FFFFA1E6C5B08004D13C2 /* DPTrackService.m */,
-				341FFFF51E6C5ADB004D13C2 /* DPProfileService.h */,
-				341FFFF61E6C5ADB004D13C2 /* DPProfileService.m */,
+				34A41F781E7694F4009AA6A1 /* Transports */,
+				34A41F131E75FC74009AA6A1 /* Parsers */,
+				34A41F3E1E7678AB009AA6A1 /* Services */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -243,6 +255,8 @@
 		3434F2D01E71FDA2009EFBB5 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				34A41F8E1E76DDD5009AA6A1 /* Base */,
+				34A41F981E76DF59009AA6A1 /* UserProfile */,
 				34A41F341E76624B009AA6A1 /* UserCard */,
 				3434F2ED1E71FE11009EFBB5 /* TrackCard */,
 				3434F2E31E71FDF9009EFBB5 /* TrackList */,
@@ -284,23 +298,23 @@
 				34A41F081E75D951009AA6A1 /* DPModel.m */,
 				3464E4211E70B01500AC60C9 /* DPTrack.h */,
 				3464E4221E70B01500AC60C9 /* DPTrack.m */,
-				34A41F1C1E76247C009AA6A1 /* NSArray+DPAdditions.h */,
-				34A41F1D1E76247C009AA6A1 /* NSArray+DPAdditions.m */,
 				3464E4241E70C1ED00AC60C9 /* DPUser.h */,
 				3464E4251E70C1ED00AC60C9 /* DPUser.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
 		};
-		34A41F131E75FC74009AA6A1 /* Parser */ = {
+		34A41F131E75FC74009AA6A1 /* Parsers */ = {
 			isa = PBXGroup;
 			children = (
 				34A41F101E75E462009AA6A1 /* DPJSONParser.h */,
 				34A41F111E75E462009AA6A1 /* DPJSONParser.m */,
 				34A41F041E75BCCC009AA6A1 /* DPTrackJSONParser.h */,
 				34A41F051E75BCCC009AA6A1 /* DPTrackJSONParser.m */,
+				34A41F7C1E769687009AA6A1 /* DPUserJSONParser.h */,
+				34A41F7D1E769687009AA6A1 /* DPUserJSONParser.m */,
 			);
-			name = Parser;
+			name = Parsers;
 			sourceTree = "<group>";
 		};
 		34A41F1F1E762685009AA6A1 /* Dummies */ = {
@@ -309,6 +323,8 @@
 				34A41F1B1E761ED0009AA6A1 /* DPDummy.h */,
 				34A41F181E761E8A009AA6A1 /* DPTrack+DPDummy.h */,
 				34A41F191E761E8A009AA6A1 /* DPTrack+DPDummy.m */,
+				34A41F8B1E76D99E009AA6A1 /* DPUser+DPDummy.h */,
+				34A41F8C1E76D99E009AA6A1 /* DPUser+DPDummy.m */,
 			);
 			name = Dummies;
 			sourceTree = "<group>";
@@ -318,12 +334,118 @@
 			children = (
 				34A41F2B1E766247009AA6A1 /* DPUserCardView.h */,
 				34A41F2C1E766247009AA6A1 /* DPUserCardView.m */,
-				34A41F2D1E766247009AA6A1 /* DPUserCardView.xib */,
 				34A41F2E1E766247009AA6A1 /* DPUserCardViewModel.h */,
 				34A41F2F1E766247009AA6A1 /* DPUserCardViewModel.m */,
 				34A41F301E766247009AA6A1 /* DPUserCardViewModelType.h */,
+				34A41F2D1E766247009AA6A1 /* DPUserCardView.xib */,
 			);
 			name = UserCard;
+			sourceTree = "<group>";
+		};
+		34A41F381E7669D7009AA6A1 /* Protocols And Categories */ = {
+			isa = PBXGroup;
+			children = (
+				34B6916F1E70F9C7005A8ECD /* DPKVODependencyMapProvider.h */,
+				34A41F1C1E76247C009AA6A1 /* NSArray+DPAdditions.h */,
+				34A41F1D1E76247C009AA6A1 /* NSArray+DPAdditions.m */,
+			);
+			name = "Protocols And Categories";
+			sourceTree = "<group>";
+		};
+		34A41F391E766ADE009AA6A1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				34A41F3F1E7678B8009AA6A1 /* Components */,
+				34A41F6E1E768FDE009AA6A1 /* Views */,
+				34A41F381E7669D7009AA6A1 /* Protocols And Categories */,
+				341F00501E6F5BEB004D13C2 /* Protocols And Categories (UI) */,
+				341F002F1E6E0630004D13C2 /* APIPlayground.playground */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		34A41F3E1E7678AB009AA6A1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				34A41F6F1E7691DB009AA6A1 /* DPServiceContainer.h */,
+				34A41F701E7691DB009AA6A1 /* DPServiceContainer.m */,
+				3434F2EE1E7206C7009EFBB5 /* DPTrackServiceType.h */,
+				341FFFF91E6C5B08004D13C2 /* DPTrackService.h */,
+				341FFFFA1E6C5B08004D13C2 /* DPTrackService.m */,
+				34A41F3D1E767862009AA6A1 /* DPUserServiceType.h */,
+				341FFFF51E6C5ADB004D13C2 /* DPUserService.h */,
+				341FFFF61E6C5ADB004D13C2 /* DPUserService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		34A41F3F1E7678B8009AA6A1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				34B691691E70E740005A8ECD /* DPSortComponent.h */,
+				34B6916A1E70E740005A8ECD /* DPSortComponent.m */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		34A41F6E1E768FDE009AA6A1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3464E41C1E70A39A00AC60C9 /* DPTableViewCell.h */,
+				3464E41D1E70A39A00AC60C9 /* DPTableViewCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		34A41F781E7694F4009AA6A1 /* Transports */ = {
+			isa = PBXGroup;
+			children = (
+				34A41F791E769520009AA6A1 /* DPHTTPTransport.h */,
+				34A41F7A1E769520009AA6A1 /* DPHTTPTransport.m */,
+				34A41F721E7694B0009AA6A1 /* DPTrackHTTPTransport.h */,
+				34A41F731E7694B0009AA6A1 /* DPTrackHTTPTransport.m */,
+				34A41F751E7694CC009AA6A1 /* DPUserHTTPTransport.h */,
+				34A41F761E7694CC009AA6A1 /* DPUserHTTPTransport.m */,
+			);
+			name = Transports;
+			sourceTree = "<group>";
+		};
+		34A41F8E1E76DDD5009AA6A1 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				341F00631E6F6DB5004D13C2 /* DPViewType.h */,
+				341FFFEC1E6B73CD004D13C2 /* DPView.h */,
+				341FFFED1E6B73CD004D13C2 /* DPView.m */,
+				341FFFD61E6B6C96004D13C2 /* DPViewController.h */,
+				341FFFD71E6B6C96004D13C2 /* DPViewController.m */,
+				341F00641E6F6DC2004D13C2 /* DPViewModelType.h */,
+				341FFFE91E6B721B004D13C2 /* DPViewModel.h */,
+				341FFFEA1E6B721B004D13C2 /* DPViewModel.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		34A41F981E76DF59009AA6A1 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				34A41F8F1E76DF41009AA6A1 /* DPUserProfileViewController.h */,
+				34A41F901E76DF41009AA6A1 /* DPUserProfileViewController.m */,
+				34A41F921E76DF41009AA6A1 /* DPUserProfileViewModel.h */,
+				34A41F931E76DF41009AA6A1 /* DPUserProfileViewModel.m */,
+				34A41F941E76DF41009AA6A1 /* DPUserProfileViewModelType.h */,
+				34A41F911E76DF41009AA6A1 /* DPUserProfileViewController.storyboard */,
+			);
+			name = UserProfile;
+			sourceTree = "<group>";
+		};
+		40B4B65C6E91220997E249B4 /* UserProfile */ = {
+			isa = PBXGroup;
+			children = (
+				9418AB1D3FBC30D11AE97E47 /* DPUserProfileViewModel.h */,
+				AF580FA5F556DA35BEB616EC /* DPUserProfileViewModel.m */,
+				85F96B6593474E8A14C9DBD1 /* DPUserProfileViewModelType.h */,
+			);
+			path = UserProfile;
 			sourceTree = "<group>";
 		};
 		832C3D3B83889CDF7F3E994D /* Frameworks */ = {
@@ -425,6 +547,7 @@
 				34A41F321E766247009AA6A1 /* DPUserCardView.xib in Resources */,
 				341FFFCF1E6B6A5E004D13C2 /* LaunchScreen.storyboard in Resources */,
 				3434F2EB1E71FE0C009EFBB5 /* DPTrackCardView.xib in Resources */,
+				34A41F961E76DF41009AA6A1 /* DPUserProfileViewController.storyboard in Resources */,
 				341FFFCC1E6B6A5E004D13C2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,10 +625,18 @@
 				34A41F311E766247009AA6A1 /* DPUserCardView.m in Sources */,
 				34A41F091E75D951009AA6A1 /* DPModel.m in Sources */,
 				3434F2E01E71FDF2009EFBB5 /* DPTrackListViewController.m in Sources */,
+				34A41F711E7691DB009AA6A1 /* DPServiceContainer.m in Sources */,
 				3434F2E21E71FDF2009EFBB5 /* DPTrackListViewModel.m in Sources */,
+				34A41F741E7694B0009AA6A1 /* DPTrackHTTPTransport.m in Sources */,
+				34A41F771E7694CC009AA6A1 /* DPUserHTTPTransport.m in Sources */,
+				34A41F8D1E76D99E009AA6A1 /* DPUser+DPDummy.m in Sources */,
+				34A41F7E1E769687009AA6A1 /* DPUserJSONParser.m in Sources */,
+				34A41F3C1E7673DD009AA6A1 /* DPAppRouter.m in Sources */,
+				34A41F971E76DF41009AA6A1 /* DPUserProfileViewModel.m in Sources */,
 				34A41F1A1E761E8A009AA6A1 /* DPTrack+DPDummy.m in Sources */,
 				341F004C1E6F5979004D13C2 /* UIView+DPNibLoadable.m in Sources */,
 				341FFFD81E6B6C96004D13C2 /* DPViewController.m in Sources */,
+				34A41F951E76DF41009AA6A1 /* DPUserProfileViewController.m in Sources */,
 				34A41F121E75E462009AA6A1 /* DPJSONParser.m in Sources */,
 				341FFFEE1E6B73CD004D13C2 /* DPView.m in Sources */,
 				34A41F061E75BCCC009AA6A1 /* DPTrackJSONParser.m in Sources */,
@@ -521,7 +652,8 @@
 				3464E4231E70B01500AC60C9 /* DPTrack.m in Sources */,
 				34B6916B1E70E740005A8ECD /* DPSortComponent.m in Sources */,
 				3434F2EC1E71FE0C009EFBB5 /* DPTrackCardViewModel.m in Sources */,
-				341FFFF71E6C5ADB004D13C2 /* DPProfileService.m in Sources */,
+				341FFFF71E6C5ADB004D13C2 /* DPUserService.m in Sources */,
+				34A41F7B1E769520009AA6A1 /* DPHTTPTransport.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

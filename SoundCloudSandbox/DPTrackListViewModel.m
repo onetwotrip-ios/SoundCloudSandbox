@@ -37,21 +37,19 @@ NS_ASSUME_NONNULL_END
 @implementation DPTrackListViewModel
 @synthesize tracksReloadSignal = _tracksReloadSignal;
 
+//..................................................................................................
+#pragma mark - Inits
+
 - (instancetype)init {
     if (self = [super init]) {
         _sortComponent = [[DPSortComponent alloc] init];
-        NSSortDescriptor *descriptor = [NSSortDescriptor sortDescriptorWithKey: @keypath(DPTrack.new, name) ascending: YES];
+        NSSortDescriptor *descriptor = [NSSortDescriptor sortDescriptorWithKey:@keypath(DPTrack.new, name) ascending:YES];
         _sortComponent.descriptors = @[descriptor];
+        
         _tracksReloadSignal = [RACObserve(self, sortedTracks) map:^NSNumber *(id _) { return @YES; }];
     }
     return self;
 }
-
-//..................................................................................................
-#pragma mark - Inits
-
-//..................................................................................................
-#pragma mark - Inputs
 
 //..................................................................................................
 #pragma mark - Outputs
@@ -73,7 +71,7 @@ NS_ASSUME_NONNULL_END
 #pragma mark - InternalMethods
 
 - (NSArray<DPTrack *> *)sortedTracks {
-    return self.tracks ? [self.sortComponent sortedObjects: self.tracks] : nil;
+    return self.tracks ? [self.sortComponent sortedObjects:self.tracks] : nil;
 }
 
 //..................................................................................................

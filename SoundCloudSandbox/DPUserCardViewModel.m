@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
                                    DPUserCardViewModelOutputs,
                                    DPUserCardViewModelInOutputs>
 @property (nonatomic, copy) NSString *fullNameLabelText;
+@property (nonatomic, copy) NSString *nickNameLabelText;
 @property (nonatomic, strong) NSURL *avatarImageURL;
 @end
 
@@ -32,15 +33,13 @@ NS_ASSUME_NONNULL_END
 @implementation DPUserCardViewModel
 
 - (void)setUser:(DPUser *)user {
-    if ([_user isEqual:user]) {
+    if ([_user isEqualToUser:user]) {
         return;
     }
     _user = user;
-    self.fullNameLabelText = [self fullNameFromFirstName:_user.firstName lastname:_user.lastName];
-}
-
-- (NSString *)fullNameFromFirstName:(NSString *)firstName lastname:(NSString *)lastName {
-    return [@[firstName, lastName] dp_concat:@" "];
+    self.fullNameLabelText = _user.fullName;
+    self.avatarImageURL = _user.avatarImageURL;
+    self.nickNameLabelText = _user.nickName;
 }
 
 @end

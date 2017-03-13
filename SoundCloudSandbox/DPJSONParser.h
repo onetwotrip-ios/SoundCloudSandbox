@@ -12,7 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DPJSONParser : NSObject
 
-+ (NSError *)errorWithModelError:(NSError *)error;
++ (NSError *)errorWithUnderlyingError:(NSError *)error;
+
+- (NSDictionary *)dictionary:(id)json error:(NSError **)error;
+- (NSArray<NSDictionary *> *)arrayOfDictionaries:(id)json error:(NSError **)error;
 
 @end
 

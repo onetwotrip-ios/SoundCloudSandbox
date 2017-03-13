@@ -15,7 +15,7 @@ typedef NSSet<DPTrack *> *DPTrackSet;
 
 @protocol DPTrackServiceType
 
-- (RACSignal<DPTrackSet> *) tracksWithIDs: (NSIndexSet *) IDs;
+- (RACSignal<DPTrackSet> *)favoriteTracksForUserWithID:(NSUInteger)userID;
 
 @end
 

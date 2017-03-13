@@ -9,8 +9,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol DPStoryboardLoadable
-+ (instancetype) dp_loadFromStoryboard;
-+ (instancetype) dp_loadFromStoryboard: (NSString *) storyboardName;
++ (instancetype)dp_loadFromStoryboard;
++ (instancetype)dp_loadFromStoryboard:(NSString *)storyboardName;
 @end
 
 NS_ASSUME_NONNULL_END

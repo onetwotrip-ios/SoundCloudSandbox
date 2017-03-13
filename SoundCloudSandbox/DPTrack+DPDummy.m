@@ -8,6 +8,8 @@
 
 #import "DPTrack+DPDummy.h"
 
+#import "DPUser+DPDummy.h"
+
 #import <libkern/OSAtomic.h>
 
 @implementation DPTrack (DPDummy)
@@ -17,8 +19,9 @@
     OSAtomicIncrement64Barrier(&counter); // #dev_warnings OSAtomicIncrement64Barrier deprecated, fix needed
 
     return [[self alloc] initWithID:counter
-                             author:@[@"author", @(counter)].dp_concat
-                               name:@[@"name",   @(counter)].dp_concat
+                             author:[DPUser dp_dummy]
+                               name:@[@"name", @(counter)].dp_concat
                            duration:counter * 20.0];
 }
+
 @end

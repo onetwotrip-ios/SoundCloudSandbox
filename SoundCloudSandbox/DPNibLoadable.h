@@ -9,8 +9,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol DPNibLoadable
-+ (instancetype) dp_loadFromNib: (NSString *) nibName;
-+ (instancetype) dp_loadFromNib;
++ (instancetype)dp_loadFromNib:(NSString *)nibName;
++ (instancetype)dp_loadFromNib;
 @end
 
 NS_ASSUME_NONNULL_END

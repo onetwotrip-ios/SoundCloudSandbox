@@ -8,18 +8,20 @@
 
 #import "DPTrack.h"
 
+#import "DPUser.h"
+
 @implementation DPTrack
 
 //..................................................................................................
 #pragma mark - Inits
 
 - (instancetype)initWithID:(NSUInteger)ID
-                    author:(NSString *)author
+                    author:(DPUser *)author
                       name:(NSString *)name
                   duration:(NSTimeInterval)duration {
     if (self = [super init]) {
         _ID = ID;
-        _author = [author copy];
+        _author = author;
         _name = [name copy];
         _duration = duration;
     }
@@ -62,8 +64,8 @@
     if (!track) {
         return NO;
     }
-    return [self.author isEqualToString:track.author] &&
-           [self.name   isEqualToString:track.name] &&
+    return [self.author isEqualToUser:track.author] &&
+           [self.name isEqualToString:track.name] &&
            self.duration == track.duration;
 }
 

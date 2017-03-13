@@ -12,7 +12,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class DPTrackJSONParser;
+@class DPTrackHTTPTransport;
+
 @interface DPTrackService : NSObject <DPTrackServiceType>
+
+@property (nonatomic, strong) DPTrackJSONParser *jsonParser;
+@property (nonatomic, strong) DPTrackHTTPTransport *httpTransport;
 
 @end
 

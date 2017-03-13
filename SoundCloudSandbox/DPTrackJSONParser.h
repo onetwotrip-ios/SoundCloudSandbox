@@ -14,7 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DPTrackJSONParser : DPJSONParser
 
-- (DPTrack *)trackFromJson:(NSDictionary *)json error:(NSError **)error;
+- (nullable NSSet<DPTrack *> *)tracksFromJsonArray:(NSArray<NSDictionary *> *)jsonArray error:(NSError **)error;
+- (nullable DPTrack *)trackFromJson:(NSDictionary *)json error:(NSError **)error;
 
 @end
 

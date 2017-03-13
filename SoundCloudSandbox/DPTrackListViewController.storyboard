@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a00-oD-QAs">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DPTrackCellReuseID" id="amZ-el-pDW" customClass="DPTableViewCell">
@@ -45,7 +45,7 @@
                             <constraint firstAttribute="trailing" secondItem="a00-oD-QAs" secondAttribute="trailing" id="7rk-lY-oRI"/>
                             <constraint firstItem="SYn-Uf-1E7" firstAttribute="top" secondItem="a00-oD-QAs" secondAttribute="bottom" id="c8K-tT-95m"/>
                             <constraint firstItem="a00-oD-QAs" firstAttribute="leading" secondItem="Dkz-Xh-tVQ" secondAttribute="leading" id="puc-tn-UoQ"/>
-                            <constraint firstItem="a00-oD-QAs" firstAttribute="top" secondItem="Dkz-Xh-tVQ" secondAttribute="top" constant="20" id="vq0-Y7-uC2"/>
+                            <constraint firstItem="a00-oD-QAs" firstAttribute="top" secondItem="Dkz-Xh-tVQ" secondAttribute="top" id="vq0-Y7-uC2"/>
                         </constraints>
                     </view>
                     <userDefinedRuntimeAttributes>

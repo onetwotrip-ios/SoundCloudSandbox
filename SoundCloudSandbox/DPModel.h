@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (class, atomic, readonly) NSSet<DPKeyPath> *nonnullKeys;
 
-- (BOOL)validateKey: (DPKeyPath) key error: (NSError **) error;
+- (BOOL)validateKey:(DPKeyPath)key error:(NSError **)error;
 
 @end
 

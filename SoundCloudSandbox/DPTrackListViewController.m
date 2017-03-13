@@ -26,9 +26,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DPTrackListViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) IBOutlet UIView *tableBackgroundView;
 @property (nonatomic, copy) IBInspectable NSString *trackCellReuseID;
 
-// Outlets
 @end
 
 NS_ASSUME_NONNULL_END
@@ -60,11 +60,16 @@ NS_ASSUME_NONNULL_END
     const CGFloat kEstimatedRowHeight = 44.0;
     self.tableView.estimatedRowHeight = kEstimatedRowHeight;
     self.tableView.allowsSelection = NO;
+    
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
 
 - (void)observeViewModel {
+    @weakify(self);
     [self.viewModel.outputs.tracksReloadSignal subscribeNext:^(id _) {
-        [self.tableView reloadData];
+        @strongify(self);
+        [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:0]
+                      withRowAnimation:UITableViewRowAnimationFade];
     }];
 }
 
@@ -77,12 +82,12 @@ NS_ASSUME_NONNULL_END
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    DPTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier: self.trackCellReuseID];
+    DPTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.trackCellReuseID];
     if (!cell.managedView)
     {
         cell.managedView = [DPTrackCardView dp_loadFromNib];
     }
-    cell.managedView.viewModel = [self.viewModel.outputs trackCardViewModelAtIndex: indexPath.row];
+    cell.managedView.viewModel = [self.viewModel.outputs trackCardViewModelAtIndex:indexPath.row];
     return cell;
 }
 
