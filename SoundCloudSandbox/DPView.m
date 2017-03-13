@@ -12,7 +12,7 @@
 @synthesize viewModel = _viewModel;
 
 - (void)setViewModel:(id<DPViewModelType>)viewModel {
-    // #dev_architecture Gotta be careful here. Ensure old viewModel will deallocate immediately
+    // #dev_architecture Gotta be careful here. Ensure old viewModel will deallocate immediately (RAC)
     _viewModel = viewModel;
 
     [self observeViewModel];

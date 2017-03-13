@@ -18,7 +18,7 @@
 @end
 
 @implementation DPMutableUser
-// #dev_architecture We use this trick for 2 reasons:
+// #dev_architecture We use this dirty trick with mutable sublass for 2 reasons:
 // 1) It provides more type safty
 // 2) The lifetime of the object is tiny and fully comtrollable
 

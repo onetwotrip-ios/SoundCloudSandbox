@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_END
 #pragma mark - Overrides
 
 - (void)observeViewModel {
-    // #dev_architecture Ensure inputs are changing in a batch
+    // #dev_architecture Ensure inputs are not changing. -InitWithModel for viewModel?
     @weakify(self);
     [RACObserve(self.viewModel, outputs) subscribeNext:^(id<DPTrackCardViewModelOutputs> outputs) {
         @strongify(self);

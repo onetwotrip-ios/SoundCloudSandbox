@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol DPTrackServiceType;
-@class DPTrack; // #dev_architecture make another protocol?
+@class DPTrack;
 
 @interface DPTrackListViewModel : DPViewModel <DPTrackListViewModelType>
 @property (nonatomic, copy) NSSet<DPTrack *> *tracks;
