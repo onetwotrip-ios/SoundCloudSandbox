@@ -59,7 +59,7 @@ NS_ASSUME_NONNULL_END
 }
 
 - (id<DPTrackCardViewModelType>)trackCardViewModelAtIndex:(NSUInteger)index {
-    DPTrackCardViewModel *vm = [DPTrackCardViewModel new];
+    DPTrackCardViewModel *vm = [[DPTrackCardViewModel alloc] init];
     vm.track = self.sortedTracks[index];
     return vm;
 }

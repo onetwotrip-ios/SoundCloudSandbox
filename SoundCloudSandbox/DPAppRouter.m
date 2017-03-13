@@ -46,11 +46,11 @@ NS_ASSUME_NONNULL_END
     return self;
 }
 
-- (void)showFavoriteTracksForUserWithID:(NSUInteger)userID {
+- (void)showFavoriteTracksForRandomUsers {
     // No time to fix this mess. Maybe later.
     // 1. Assemble UserProfile Module
     DPUserProfileViewController *userProfileVC = [DPUserProfileViewController dp_loadFromStoryboard];
-    DPUserProfileViewModel *userProfileVM = [DPUserProfileViewModel new];
+    DPUserProfileViewModel *userProfileVM = [[DPUserProfileViewModel alloc] init];
     userProfileVM.trackService = self.serviceContainer.trackService;
     userProfileVM.userService = self.serviceContainer.userService;
     userProfileVC.viewModel = userProfileVM;
@@ -62,7 +62,7 @@ NS_ASSUME_NONNULL_END
 
     // 2. Assemble TrackList Module
     DPTrackListViewController *trackListVC = [DPTrackListViewController dp_loadFromStoryboard];
-    DPTrackListViewModel *trackListVM = [DPTrackListViewModel new];
+    DPTrackListViewModel *trackListVM = [[DPTrackListViewModel alloc] init];
     trackListVC.viewModel = trackListVM;
 
     // 3. Bind UserProfile and Tracklist Modules
@@ -74,7 +74,7 @@ NS_ASSUME_NONNULL_END
 
     // 4. Assemble UserCard Module
     DPUserCardView *userCardView = [DPUserCardView dp_loadFromNib];
-    DPUserCardViewModel *userCardVM = [DPUserCardViewModel new];
+    DPUserCardViewModel *userCardVM = [[DPUserCardViewModel alloc] init];
     userCardView.viewModel = userCardVM;
 
     // 5. Bind UserCard and UserProfile Modules

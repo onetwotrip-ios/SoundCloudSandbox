@@ -19,11 +19,11 @@
 @implementation DPServiceContainer
 
 + (instancetype) productionContainer {
-    DPServiceContainer *container = [DPServiceContainer new];
+    DPServiceContainer *container = [[DPServiceContainer alloc] init];
 
     // Parsers
-    DPTrackJSONParser *trackJSONParser = [DPTrackJSONParser new];
-    DPUserJSONParser *userJSONParser = [DPUserJSONParser new];
+    DPTrackJSONParser *trackJSONParser = [[DPTrackJSONParser alloc] init];
+    DPUserJSONParser *userJSONParser = [[DPUserJSONParser alloc] init];
 
     // Transports
     static NSString * const kHTTPClientID = @"c23089b7e88643b5b839c4b8609fce3b";
@@ -33,11 +33,11 @@
     DPUserHTTPTransport *userHTTPTransport = [[DPUserHTTPTransport alloc] initWithClientID:kHTTPClientID baseURL:baseURL];
     
     // Services
-    DPTrackService *trackService = [DPTrackService new];
+    DPTrackService *trackService = [[DPTrackService alloc] init];
     trackService.jsonParser = trackJSONParser;
     trackService.httpTransport = trackHTTPTransport;
     
-    DPUserService *userService = [DPUserService new];
+    DPUserService *userService = [[DPUserService alloc] init];
     userService.jsonParser = userJSONParser;
     userService.httpTransport = userHTTPTransport;
     

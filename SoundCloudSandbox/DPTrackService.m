@@ -17,8 +17,7 @@
 @implementation DPTrackService
 
 - (RACSignal<DPTrackSet> *)favoriteTracksForUserWithID:(NSUInteger)userID {
-    return [[RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-        
+    RACSignal *signal = [[RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
         NSString *userPath = [NSString stringWithFormat:@"/users/%@/favorites", @(userID)];
         
         [[self.httpTransport get:userPath]
@@ -46,6 +45,8 @@
             // dispose smth?
         }];
     }] setNameWithFormat:@"favoriteTracksForUserWithID:"];
+    
+    return [signal replayLazily];
 }
 
 @end

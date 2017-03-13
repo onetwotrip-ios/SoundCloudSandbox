@@ -37,17 +37,14 @@ NS_ASSUME_NONNULL_END
     NSUInteger userID = arc4random_uniform(kUpperBound - kLowerBound) + kLowerBound;
     
     @weakify(self);
-    [[[self.trackService favoriteTracksForUserWithID:userID]
-        deliverOnMainThread]
-        subscribeNext:^(DPTrackSet tracks) {
+    [[RACSignal
+        zip:@[[self.trackService favoriteTracksForUserWithID:userID],
+              [self.userService userWithID:userID]]]
+        subscribeNext:^(RACTuple *tuple) {
             @strongify(self);
+            DPTrackSet tracks = tuple.first;
+            DPUser *user = tuple.second;
             self.tracks = [tracks copy];
-        }];
-    
-    [[[self.userService userWithID:userID]
-        deliverOnMainThread]
-        subscribeNext:^(DPUser *user) {
-            @strongify(self);
             self.user = user;
         }];
 }

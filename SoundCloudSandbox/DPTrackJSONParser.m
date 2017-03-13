@@ -40,7 +40,7 @@
 
 - (instancetype) init {
     if (self = [super init]) {
-        _userParser = [DPUserJSONParser new];
+        _userParser = [[DPUserJSONParser alloc] init];
     }
     return self;
 }
@@ -80,7 +80,7 @@
 }
 
 - (nullable NSSet<DPTrack *> *)tracksFromJsonArray:(NSArray<NSDictionary *> *)jsonArray error:(NSError **)error {
-    NSMutableSet<DPTrack *> *result = [NSMutableSet new];
+    NSMutableSet<DPTrack *> *result = [[NSMutableSet alloc] init];
     NSError *localError;
     for (NSDictionary *json in jsonArray) {
         DPTrack *track = [self trackFromJson:json error:&localError];

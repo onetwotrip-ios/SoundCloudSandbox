@@ -37,7 +37,9 @@ NS_ASSUME_NONNULL_END
 
 - (void)observeViewModel {
     // #dev_architecture Ensure inputs are changing in a batch
+    @weakify(self);
     [RACObserve(self.viewModel, outputs) subscribeNext:^(id<DPTrackCardViewModelOutputs> outputs) {
+        @strongify(self);
         self.authorLabel.text = outputs.authorLabelText;
         self.nameLabel.text = outputs.nameLabelText;
         self.durationLabel.text = outputs.durationLabelText;

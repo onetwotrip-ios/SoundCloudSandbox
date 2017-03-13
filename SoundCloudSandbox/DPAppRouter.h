@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, weak) DPRootViewController *rootVC;
 
-- (void)showFavoriteTracksForUserWithID:(NSUInteger)userID;
+- (void)showFavoriteTracksForRandomUsers;
 
 @end
 

@@ -36,7 +36,7 @@
 @implementation DPUserJSONParser
 
 - (DPUser *)userFromJson:(NSDictionary *)json error:(NSError **)error {
-    DPMutableUser *mUser = [DPMutableUser new];
+    DPMutableUser *mUser = [[DPMutableUser alloc] init];
     NSError *localError;
     
     mUser.ID = DP_CAST(json[@"id"], NSNumber).unsignedIntegerValue;

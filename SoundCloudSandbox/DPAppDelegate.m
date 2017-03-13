@@ -11,21 +11,18 @@
 #import "DPRootViewController.h"
 #import "DPAppRouter.h"
 
-static const NSUInteger kTestUserID = 3207;
-
 @implementation DPAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    DPRootViewController *rootVC = [DPRootViewController new];
+    DPRootViewController *rootVC = [[DPRootViewController alloc] init];
     self.window.rootViewController = rootVC;
     [self.window makeKeyAndVisible];
 
     DPAppRouter *router = [[DPAppRouter alloc] init];
     router.rootVC = rootVC;
     rootVC.router = router; // to keep router alive
-    [router showFavoriteTracksForUserWithID:kTestUserID];
-
+    [router showFavoriteTracksForRandomUsers];
     return YES;
 }
 

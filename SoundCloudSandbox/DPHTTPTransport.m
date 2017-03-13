@@ -48,6 +48,7 @@ NS_ASSUME_NONNULL_END
             completionHandler:^(NSData * _Nullable data,
                                 NSURLResponse * _Nullable response,
                                 NSError * _Nullable error) {
+                NSLog(@"Task finished");
                 if (error) {
                     [subscriber sendError:[self.class systemErrorWithUnderlyingError:error]];
                     return;
@@ -69,6 +70,7 @@ NS_ASSUME_NONNULL_END
                 [subscriber sendCompleted];
         }];
         
+        NSLog(@"Task resumed");
         [task resume];
         
         return [RACDisposable disposableWithBlock:^{
