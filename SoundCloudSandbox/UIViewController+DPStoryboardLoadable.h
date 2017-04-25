@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIViewController (StoryboardLoadable) <DPStoryboardLoadable>
+@interface UIViewController (DPStoryboardLoadable) <DPStoryboardLoadable>
 @end
 
 NS_ASSUME_NONNULL_END

@@ -12,7 +12,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIView (NibLoadable) <DPNibLoadable>
+@interface UIView (DPNibLoadable) <DPNibLoadable>
 @end
 
 NS_ASSUME_NONNULL_END

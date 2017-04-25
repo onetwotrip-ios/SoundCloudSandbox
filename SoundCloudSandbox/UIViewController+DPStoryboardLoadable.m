@@ -8,7 +8,7 @@
 
 #import "UIViewController+DPStoryboardLoadable.h"
 
-@implementation UIViewController (StoryboardLoadable)
+@implementation UIViewController (DPStoryboardLoadable)
 
 + (instancetype)dp_loadFromStoryboard {
     return [self dp_loadFromStoryboard:NSStringFromClass(self.class)];

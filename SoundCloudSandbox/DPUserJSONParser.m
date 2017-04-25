@@ -38,35 +38,35 @@
 - (DPUser *)userFromJson:(NSDictionary *)json error:(NSError **)error {
     DPMutableUser *mUser = [[DPMutableUser alloc] init];
     NSError *localError;
-    
+
     mUser.ID = DP_CAST(json[@"id"], NSNumber).unsignedIntegerValue;
     if (![mUser validateKey:@keypath(mUser.ID) error:&localError]) {
         *error = [self.class errorWithUnderlyingError:localError];
         return nil;
     }
-    
+
     mUser.fullName = DP_CAST(json[@"full_name"], NSString);
     if (![mUser validateKey:@keypath(mUser.fullName) error:&localError]) {
         *error = [self.class errorWithUnderlyingError:localError];
         return nil;
     }
-    
+
     mUser.nickName = DP_CAST(json[@"username"], NSString);
     if (![mUser validateKey:@keypath(mUser.nickName) error:&localError]) {
         *error = [self.class errorWithUnderlyingError:localError];
         return nil;
     }
-    
+
     NSString *avatarImageURLString = DP_CAST(json[@"avatar_url"], NSString);
     if (avatarImageURLString) {
         mUser.avatarImageURL = [NSURL URLWithString:avatarImageURLString];
     }
-        
+
     if (![mUser validateKey:@keypath(mUser.avatarImageURL) error:&localError]) {
         *error = [self.class errorWithUnderlyingError:localError];
         return nil;
     }
-    
+
     return [mUser copy];
 }
 
